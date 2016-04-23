@@ -10,6 +10,9 @@ public class CharacterInventory : MonoBehaviour {
 	Rect inventoryRect;
 	Texture2D inventoryTexture;
 
+	public ArrayList inventoryObjectsPickable;
+
+
 
 	public bool opened = false;
 
@@ -28,7 +31,7 @@ public class CharacterInventory : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		inventoryObjectsPickable = new ArrayList ();
 		inventory = new ArrayList ();
 		inventoryTextureArray = new ArrayList ();
 		inventoryObjects = new ArrayList ();
@@ -69,16 +72,21 @@ public class CharacterInventory : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+		//open inventory
 		if (Input.GetKeyUp (KeyCode.I)) {
 			if (opened) {
 				opened = false;
+				picked = false;
 			} else {
 				opened = true;
+				picked = false;
 				createInventoryPanel ();
 			}
 		}
-
-
+			
+			
+		//pick object
 		if(Input.GetKeyUp (KeyCode.E)) {
 			if (picked) {
 				picked = false;
@@ -95,6 +103,7 @@ public class CharacterInventory : MonoBehaviour {
 				if (distance < 2) {
 					//pick object
 					PickableObjectBehaviour temp = go.GetComponent<PickableObjectBehaviour>();
+					inventoryObjectsPickable.Add (temp);
 					inventoryObjects.Add (temp.objTexture);
 		
 					picked = true; // sets object to appear
@@ -106,7 +115,31 @@ public class CharacterInventory : MonoBehaviour {
 				}
 			}
 		}
+			
 
+		//select object from inventory
+		if (Input.GetKeyUp (KeyCode.Alpha1)) {
+			if (opened == false)
+				return;
+			if (picked) {
+				picked = false;
+				opened = false;
+				return;
+			}
+			if(picked == true & opened == false) {
+				opened = true;
+			}
+
+			try{
+				picked = true;
+				PickableObjectBehaviour temp = ((PickableObjectBehaviour)inventoryObjectsPickable [0]);
+				pickedObjectTexture = temp.objTexture; //sets texture to appear
+				pickedObjectRect = new Rect(temp.pickedObjX,temp.pickedObjY,temp.pickedObjWidth,temp.PickedObjHeight);
+			}catch(System.Exception e) {
+				picked = false;
+			}
+
+		}
 	}
 
 
