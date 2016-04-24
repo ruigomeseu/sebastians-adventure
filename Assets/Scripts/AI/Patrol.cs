@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Patrol : MonoBehaviour {
 
-    public Transform[] points;
+    private Vector3[] points;
     private int destPoint = 0;
     private NavMeshAgent agent;
     Animator anim;
@@ -18,6 +18,8 @@ public class Patrol : MonoBehaviour {
         // approaches a destination point).
         agent.autoBraking = false;
 
+        points = new Vector3[3] { new Vector3(0f, 0f, 0f), new Vector3(-2f, 0f, 0f), new Vector3(0f,0f,-2f) };
+
         GotoNextPoint();
     }
 
@@ -28,10 +30,10 @@ public class Patrol : MonoBehaviour {
             return;
 
         // Set the agent to go to the currently selected destination.
-        agent.destination = points[destPoint].position;
-        anim.SetBool("Grounded", true);
-        anim.SetBool("Aim", false);
-        anim.SetFloat("Speed", agent.speed, 0.1f, Time.deltaTime);
+        agent.destination = points[destPoint];
+        //anim.SetBool("Grounded", true);
+        //anim.SetBool("Aim", false);
+        //anim.SetFloat("Speed", agent.speed, 0.1f, Time.deltaTime);
 
         // Choose the next point in the array as the destination,
         // cycling to the start if necessary.
