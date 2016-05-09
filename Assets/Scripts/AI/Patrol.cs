@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Patrol : MonoBehaviour {
 
-    private Vector3[] points;
+    public Vector3[] points;
     private int destPoint = 0;
     private NavMeshAgent agent;
     Animator anim;
@@ -18,7 +18,7 @@ public class Patrol : MonoBehaviour {
         // approaches a destination point).
         agent.autoBraking = false;
 
-        points = new Vector3[3] { new Vector3(0f, 0f, 0f), new Vector3(-2f, 0f, 0f), new Vector3(0f,0f,-2f) };
+        //points = new Vector3[3] { new Vector3(0f, 0f, 0f), new Vector3(-2f, 0f, 0f), new Vector3(0f,0f,-2f) };
 
         GotoNextPoint();
     }

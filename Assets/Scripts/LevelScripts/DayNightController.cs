@@ -33,7 +33,6 @@ public class DayNightController : MonoBehaviour {
 
 		// This makes currentTimeOfDay go from 0 to 1 in the number of seconds we've specified.
 		currentTimeOfDay += (Time.deltaTime / secondsInFullDay) * timeMultiplier;
-		Debug.Log (Time.deltaTime);
 		// If currentTimeOfDay is 1 (midnight) set it to 0 again so we start a new day.
 		if (currentTimeOfDay >= 1) {
 			currentTimeOfDay = 0;
