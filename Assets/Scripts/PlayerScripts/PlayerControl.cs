@@ -49,6 +49,11 @@ public class PlayerControl : MonoBehaviour
 
     private Stamina staminaScript;
 
+	//sounds
+	private AudioSource audioSource;
+	private AudioClip walkSound;
+	private AudioClip runSound;
+
 	void Awake()
 	{
 		anim = GetComponent<Animator> ();
@@ -67,6 +72,13 @@ public class PlayerControl : MonoBehaviour
 
         //stamina
         staminaScript = GetComponent<Stamina>();
+
+
+		//sounds
+		audioSource = gameObject.AddComponent<AudioSource>();
+		walkSound = (AudioClip) Resources.Load("Sounds/Footsteps/walk_teste");
+		runSound = (AudioClip) Resources.Load("Sounds/Footsteps/run_teste");
+		audioSource.loop = true;
 	}
 
 	bool IsGrounded() {
@@ -140,6 +152,10 @@ public class PlayerControl : MonoBehaviour
 		{
 			if(sprinting)
 			{
+				audioSource.clip = runSound;
+				if (!audioSource.isPlaying) {
+					audioSource.Play ();
+				}
 				speed = sprintSpeed;
 			}
 			else if (running)
@@ -149,6 +165,11 @@ public class PlayerControl : MonoBehaviour
             }
 			else
 			{
+				Debug.Log ("play walk");
+				audioSource.clip = walkSound;
+				if (!audioSource.isPlaying) {
+					audioSource.Play ();
+				}
 				speed = walkSpeed;
 			}
            
@@ -158,6 +179,7 @@ public class PlayerControl : MonoBehaviour
 		}
 		else
 		{
+			audioSource.Stop ();
 			speed = 0f;
 			anim.SetFloat(speedFloat, 0f);
             staminaScript.changeStamina(-0.5f);
