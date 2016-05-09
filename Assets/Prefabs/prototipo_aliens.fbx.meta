@@ -97,6 +97,20 @@ ModelImporter:
     4300022: Cube.001
     4300024: Cube
     4300026: Plane
+    6400000: BezierCircle
+    6400002: BezierCircle.001
+    6400004: BezierCurve
+    6400006: BezierCurve.001
+    6400008: Cube
+    6400010: Cube.001
+    6400012: Cube.002
+    6400014: Cube.003
+    6400016: Cube.004
+    6400018: Plane
+    6400020: Plane.001
+    6400022: Plane.002
+    6400024: Plane.003
+    6400026: Plane.005
   materials:
     importMaterials: 1
     materialName: 0
@@ -123,7 +137,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

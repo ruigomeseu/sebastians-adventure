@@ -1,0 +1,219 @@
+fileFormatVersion: 2
+guid: 7f2b4ac634a52bb41bc9284f560fc141
+timeCreated: 1462789537
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Camera.001
+    100004: chest
+    100006: Cube.000
+    100008: Cube.001
+    100010: fing.L
+    100012: fing.L_end
+    100014: fing.R
+    100016: fing.R_end
+    100018: foor roll.L
+    100020: foor roll.R
+    100022: foot.L
+    100024: foot.R
+    100026: Hair
+    100028: Hair_end
+    100030: hand.L
+    100032: hand.R
+    100034: head
+    100036: larm.L
+    100038: larm.R
+    100040: leg control.L
+    100042: leg control.R
+    100044: leg ik.L
+    100046: leg ik.L_end
+    100048: leg ik.R
+    100050: leg ik.R_end
+    100052: leg pole target.L
+    100054: leg pole target.L_end
+    100056: leg pole target.R
+    100058: leg pole target.R_end
+    100060: lowerleg.L
+    100062: lowerleg.L_end
+    100064: lowerleg.R
+    100066: lowerleg.R_end
+    100068: neck
+    100070: Plane.002
+    100072: Plane.003
+    100074: Plane.007
+    100076: Plane.008
+    100078: Plane.009
+    100080: root
+    100082: Sphere
+    100084: SurfPatch
+    100086: toes control.L
+    100088: toes control.L_end
+    100090: toes control.R
+    100092: toes control.R_end
+    100094: toes.L
+    100096: toes.L_end
+    100098: toes.R
+    100100: toes.R_end
+    100102: torso
+    100104: uparm.L
+    100106: uparm.R
+    100108: upper leg.L
+    100110: upper leg.R
+    100112: //RootNode
+    400000: Armature
+    400002: Camera.001
+    400004: chest
+    400006: Cube.000
+    400008: Cube.001
+    400010: fing.L
+    400012: fing.L_end
+    400014: fing.R
+    400016: fing.R_end
+    400018: foor roll.L
+    400020: foor roll.R
+    400022: foot.L
+    400024: foot.R
+    400026: Hair
+    400028: Hair_end
+    400030: hand.L
+    400032: hand.R
+    400034: head
+    400036: larm.L
+    400038: larm.R
+    400040: leg control.L
+    400042: leg control.R
+    400044: leg ik.L
+    400046: leg ik.L_end
+    400048: leg ik.R
+    400050: leg ik.R_end
+    400052: leg pole target.L
+    400054: leg pole target.L_end
+    400056: leg pole target.R
+    400058: leg pole target.R_end
+    400060: lowerleg.L
+    400062: lowerleg.L_end
+    400064: lowerleg.R
+    400066: lowerleg.R_end
+    400068: neck
+    400070: Plane.002
+    400072: Plane.003
+    400074: Plane.007
+    400076: Plane.008
+    400078: Plane.009
+    400080: root
+    400082: Sphere
+    400084: SurfPatch
+    400086: toes control.L
+    400088: toes control.L_end
+    400090: toes control.R
+    400092: toes control.R_end
+    400094: toes.L
+    400096: toes.L_end
+    400098: toes.R
+    400100: toes.R_end
+    400102: torso
+    400104: uparm.L
+    400106: uparm.R
+    400108: upper leg.L
+    400110: upper leg.R
+    400112: //RootNode
+    2300000: Plane.002
+    2300002: Plane.003
+    2300004: Plane.007
+    2300006: Plane.008
+    2300008: Plane.009
+    2300010: Sphere
+    2300012: SurfPatch
+    3300000: Plane.002
+    3300002: Plane.003
+    3300004: Plane.007
+    3300006: Plane.008
+    3300008: Plane.009
+    3300010: Sphere
+    3300012: SurfPatch
+    4300000: Sphere
+    4300002: Cube.001
+    4300004: Cube.000
+    4300006: Plane.002
+    4300008: Plane.003
+    4300010: Plane.007
+    4300012: Plane.008
+    4300014: Plane.009
+    4300016: SurfPatch
+    6400000: Plane.002
+    6400002: Plane.003
+    6400004: Plane.007
+    6400006: Plane.008
+    6400008: Plane.009
+    6400010: Sphere
+    6400012: SurfPatch
+    7400000: Armature|ArmatureAction.002
+    9500000: //RootNode
+    13700000: Cube.000
+    13700002: Cube.001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
