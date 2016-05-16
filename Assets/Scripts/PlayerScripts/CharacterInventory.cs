@@ -22,6 +22,9 @@ public class CharacterInventory : MonoBehaviour {
 	float inventoryWidth = Screen.width / 2;
 	float inventoryHeight = Screen.height / 10;
 
+	private AudioSource audioSource;
+	private AudioClip pickedItemSound;
+
 	/**
 	 * Picked objects variables
 	 */
@@ -35,7 +38,9 @@ public class CharacterInventory : MonoBehaviour {
 		inventory = new ArrayList ();
 		inventoryTextureArray = new ArrayList ();
 		inventoryObjects = new ArrayList ();
-	
+
+		audioSource = gameObject.AddComponent<AudioSource>();
+		pickedItemSound = (AudioClip) Resources.Load("Sounds/pickItem_teste");
 	}
 
 
@@ -101,6 +106,10 @@ public class CharacterInventory : MonoBehaviour {
 
 
 				if (distance < 2) {
+					//play sound
+					audioSource.clip = pickedItemSound;
+					audioSource.Play ();
+
 					//pick object
 					PickableObjectBehaviour temp = go.GetComponent<PickableObjectBehaviour>();
 					inventoryObjectsPickable.Add (temp);
