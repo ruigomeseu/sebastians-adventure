@@ -1,28 +1,40 @@
 fileFormatVersion: 2
-guid: 35dedd84bf857724aabd974c00cac8fb
-timeCreated: 1462791368
+guid: a0055b946a680044284788e3ce0d9067
+timeCreated: 1463388087
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Camera
+    100000: Camera
+    100002: //RootNode
     100004: Lamp.001
     100006: Landscape.002
-    100008: Sun
-    100010: Sun.001
-    100012: Sun.002
-    400000: //RootNode
-    400002: Camera
+    100008: Plane.001
+    100010: Plane.002
+    100012: Sun
+    100014: Sun.001
+    100016: Sun.002
+    400000: Camera
+    400002: //RootNode
     400004: Lamp.001
     400006: Landscape.002
-    400008: Sun
-    400010: Sun.001
-    400012: Sun.002
+    400008: Plane.001
+    400010: Plane.002
+    400012: Sun
+    400014: Sun.001
+    400016: Sun.002
     2300000: Landscape.002
+    2300002: Plane.001
+    2300004: Plane.002
     3300000: Landscape.002
-    4300000: Landscape.002
+    3300002: Plane.001
+    3300004: Plane.002
+    4300000: Plane.002
+    4300002: Plane.001
+    4300004: Landscape.002
     6400000: Landscape.002
+    6400002: Plane.001
+    6400004: Plane.002
   materials:
     importMaterials: 1
     materialName: 0
@@ -47,7 +59,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 5
+    globalScale: 10
     meshCompression: 0
     addColliders: 1
     importBlendShapes: 1

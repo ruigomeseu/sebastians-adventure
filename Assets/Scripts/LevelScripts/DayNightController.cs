@@ -4,7 +4,7 @@ using System.Collections;
 public class DayNightController : MonoBehaviour {
 
 	// The directional light which we manipulate as our sun.
-	private Light sun;
+	public Light sun;
 	// The number of real-world seconds in one full game day.
 	// Set this to 86400 for a 24-hour realtime day.
 	public float secondsInFullDay = 20f;
@@ -23,7 +23,7 @@ public class DayNightController : MonoBehaviour {
 	// Get the initial intensity of the sun so we remember it.
 	float sunInitialIntensity;
 	void Start() {
-		sun = GameObject.Find("Sun").GetComponent<Light>();
+		//sun = GameObject.Find("Sun").GetComponent<Light>();
 		sunInitialIntensity = sun.intensity;
 	}
 
