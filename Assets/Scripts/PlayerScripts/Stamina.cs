@@ -11,6 +11,12 @@ public class Stamina : MonoBehaviour {
     public void changeStamina(float usage)
     {
         stamina = System.Math.Min(stamina - usage, maxStamina);
+        stamina = System.Math.Max(0, stamina);
+    }
+
+    public float getCurrentStamina()
+    {
+        return stamina;
     }
 
     // Use this for initialization

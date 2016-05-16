@@ -150,7 +150,9 @@ public class PlayerControl : MonoBehaviour
 
 		if(isMoving)
 		{
-			if(sprinting)
+            float current_stamina = staminaScript.getCurrentStamina();
+
+            if (sprinting && current_stamina > 0)
 			{
 				audioSource.clip = runSound;
 				if (!audioSource.isPlaying) {
@@ -158,7 +160,7 @@ public class PlayerControl : MonoBehaviour
 				}
 				speed = sprintSpeed;
 			}
-			else if (running)
+			else if (running && current_stamina > 0)
 			{
 				speed = runSpeed;
                 
@@ -170,7 +172,9 @@ public class PlayerControl : MonoBehaviour
 					audioSource.Play ();
 				}
 				speed = walkSpeed;
-			}
+                //recover stamina
+                staminaScript.changeStamina(-0.01f);
+            }
            
             staminaScript.changeStamina(speed / 200f);
             
@@ -181,7 +185,8 @@ public class PlayerControl : MonoBehaviour
 			audioSource.Stop ();
 			speed = 0f;
 			anim.SetFloat(speedFloat, 0f);
-            staminaScript.changeStamina(-0.5f);
+            //recover stamina
+            staminaScript.changeStamina(-0.01f);
         }
 		GetComponent<Rigidbody>().AddForce(Vector3.forward*speed);
 	}
