@@ -165,7 +165,6 @@ public class PlayerControl : MonoBehaviour
             }
 			else
 			{
-				Debug.Log ("play walk");
 				audioSource.clip = walkSound;
 				if (!audioSource.isPlaying) {
 					audioSource.Play ();
