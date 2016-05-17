@@ -85,6 +85,7 @@ public class PlayerControl : MonoBehaviour
 		return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
 	}
 
+
 	void Update()
 	{
 		// fly

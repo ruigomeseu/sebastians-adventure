@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class CharacterInventory : MonoBehaviour {
-    
+	public ArrayList inventoryObjectsNames;
 	public ArrayList inventoryObjects;
 
 	public ArrayList inventory;
@@ -31,6 +31,7 @@ public class CharacterInventory : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		inventoryObjectsNames = new ArrayList ();
 		inventoryObjectsPickable = new ArrayList ();
 		inventory = new ArrayList ();
 		inventoryTextureArray = new ArrayList ();
@@ -93,7 +94,7 @@ public class CharacterInventory : MonoBehaviour {
 				return;
 			}
 
-			GameObject[] objectsInWorld = GameObject.FindGameObjectsWithTag ("InventoryObject");
+			GameObject[] objectsInWorld = GameObject.FindGameObjectsWithTag ("CollectableObject");
 
 			foreach( GameObject go in objectsInWorld)
 			{
@@ -105,12 +106,11 @@ public class CharacterInventory : MonoBehaviour {
 					PickableObjectBehaviour temp = go.GetComponent<PickableObjectBehaviour>();
 					inventoryObjectsPickable.Add (temp);
 					inventoryObjects.Add (temp.objTexture);
+					inventoryObjectsNames.Add (go.name);
 		
 					picked = true; // sets object to appear
 					pickedObjectTexture = temp.objTexture; //sets texture to appear
 					pickedObjectRect = new Rect(temp.pickedObjX,temp.pickedObjY,temp.pickedObjWidth,temp.PickedObjHeight);
-					Debug.Log (temp.pickedObjX);
-					Debug.Log (temp.pickedObjY);
 					Destroy (go);
 				}
 			}
