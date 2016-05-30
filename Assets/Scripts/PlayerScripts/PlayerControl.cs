@@ -54,6 +54,8 @@ public class PlayerControl : MonoBehaviour
 	private AudioClip walkSound;
 	private AudioClip runSound;
 
+	public bool IsMovementActivated = true;
+
 	void Awake()
 	{
 		anim = GetComponent<Animator> ();
@@ -89,34 +91,40 @@ public class PlayerControl : MonoBehaviour
 	void Update()
 	{
 		// fly
-		if(Input.GetButtonDown ("Fly"))
-			fly = !fly;
-		aim = Input.GetButton("Aim");
-		h = Input.GetAxis("Horizontal");
-		v = Input.GetAxis("Vertical");
-		run = Input.GetButton ("Run");
-		sprint = Input.GetButton ("Sprint");
-		isMoving = Mathf.Abs(h) > 0.1 || Mathf.Abs(v) > 0.1;
+		if (IsMovementActivated) {
+			if (Input.GetButtonDown ("Fly"))
+				fly = !fly;
+			aim = Input.GetButton ("Aim");
+			h = Input.GetAxis ("Horizontal");
+			v = Input.GetAxis ("Vertical");
+			run = Input.GetButton ("Run");
+			sprint = Input.GetButton ("Sprint");
+			isMoving = Mathf.Abs (h) > 0.1 || Mathf.Abs (v) > 0.1;
+		} else {
+			isMoving = false;
+		}
 	}
 
 	void FixedUpdate()
 	{
-		anim.SetBool (aimBool, IsAiming());
-		anim.SetFloat(hFloat, h);
-		anim.SetFloat(vFloat, v);
+		anim.SetBool (aimBool, IsAiming ());
+		anim.SetFloat (hFloat, h);
+		anim.SetFloat (vFloat, v);
 		
 		// Fly
 		anim.SetBool (flyBool, fly);
-		GetComponent<Rigidbody>().useGravity = !fly;
+		GetComponent<Rigidbody> ().useGravity = !fly;
 		anim.SetBool (groundedBool, IsGrounded ());
-		if(fly)
-			FlyManagement(h,v);
-
-		else
-		{
+		if (fly)
+			FlyManagement (h, v);
+		else {
+			if (!IsMovementActivated) {
+				h = 0; v = 0; run = false; sprint = false;
+			}
 			MovementManagement (h, v, run, sprint);
 			JumpManagement ();
 		}
+
 	}
 
 	// fly

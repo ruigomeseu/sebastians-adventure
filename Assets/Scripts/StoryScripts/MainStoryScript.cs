@@ -8,13 +8,16 @@ public class MainStoryScript : MonoBehaviour {
 		{"find_house" , "Encontra a casa para obteres orientações do habitante"},
 		{"talk_npc" , "Fala com o habitante local"},
 		{"find_map" , "Encontra o mapa"},
-		{"find_beach", "Encontra a praia" }
+		{"find_pilot", "Encontra o piloto para terminar o jogo"}
 	};
 	public string CurrentStoryState;
 
 	public bool ObjectiveShown = false;
 	Rect objectiveRect;
 	Texture2D objectiveTexture;
+
+	private AudioSource audioSource;
+	private AudioClip audioClip;
 
 	private float ShowTime = 0f;
 
@@ -23,6 +26,7 @@ public class MainStoryScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		audioSource = gameObject.AddComponent<AudioSource>();
 		CurrentStoryState = "find_house";
 		objectiveRect = new Rect ((Screen.width / 3), (Screen.height / 3) * 2 , (Screen.width/3), 80);
 
@@ -37,29 +41,48 @@ public class MainStoryScript : MonoBehaviour {
 	{
 		if (state != CurrentStoryState) {
 			CurrentStoryState = state;
-			this.ObjectiveShown = false;
 		}
 	}
 
+	void ShowObjective(){
+		this.ObjectiveShown = false;
+	}
+
+	void TalkNPC(){
+		this.GetComponent<PlayerControl> ().IsMovementActivated = false;	
+
+		audioClip = (AudioClip) Resources.Load("Sounds/pickItem_teste");
+		audioSource.clip = audioClip;
+		audioSource.Play ();
+		this.GetComponent<PlayerControl> ().IsMovementActivated = true;
+		Invoke ("ShowObjective", audioClip.length);
+	}
 
 	void Update () {
 		switch(CurrentStoryState){
 			case "find_house":
-				if (Vector3.Distance (this.transform.position, npcPlayer.transform.position) < 2) {
+				if (Vector3.Distance (this.transform.position, npcPlayer.transform.position) < 8) {
 					this.SetStoryState ("talk_npc");
+					this.ShowObjective ();
 				}
 				break;
 			case "talk_npc":
 				if (Vector3.Distance (this.transform.position, npcPlayer.transform.position) < 2) {
-					this.SetStoryState ("find_map");
+					if (!audioSource.isPlaying) {
+						TalkNPC ();
+						this.SetStoryState ("find_map");
+					}
+
 				}
 				break;
 			case "find_map":
-				Debug.Log ("Inventory Objects:");
-				Debug.Log (GetComponent<CharacterInventory> ().inventoryObjectsNames.Count );
 				if (GetComponent<CharacterInventory> ().inventoryObjectsNames.Contains ("Map")) {
-					this.SetStoryState ("find_beach");
-				}
+					this.SetStoryState ("find_pilot");
+					this.ShowObjective ();
+				}	
+				break;	
+			case "find_pilot":
+				
 				break;	
 		}
 
