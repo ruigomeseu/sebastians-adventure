@@ -21,7 +21,6 @@ public class EnemySpawner : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (enemies.Count);
 
 		if (enemies.Count < maxEnemies) {
 			Instantiate(prefab,new Vector3(2.0f, 20f, 0f), Quaternion.identity);
