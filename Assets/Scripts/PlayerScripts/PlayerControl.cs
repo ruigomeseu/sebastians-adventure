@@ -17,7 +17,7 @@ public class PlayerControl : MonoBehaviour
 	public float jumpCooldown = 1.0f;
 
 	private float timeToNextJump = 0;
-	
+
 	private float speed;
 
 	private Vector3 lastDirection;
@@ -47,7 +47,7 @@ public class PlayerControl : MonoBehaviour
 	private float distToGround;
 	private float sprintFactor;
 
-    private Stamina staminaScript;
+	private Stamina staminaScript;
 
 	//sounds
 	private AudioSource audioSource;
@@ -60,17 +60,18 @@ public class PlayerControl : MonoBehaviour
 		cameraTransform = Camera.main.transform;
 
 		speedFloat = Animator.StringToHash("Speed");
-		//jumpBool = Animator.StringToHash("Jump");
-		//hFloat = Animator.StringToHash("H");
-		//vFloat = Animator.StringToHash("V");
-		//aimBool = Animator.StringToHash("Aim");
+		jumpBool = Animator.StringToHash("Jump");
+		hFloat = Animator.StringToHash("H");
+		vFloat = Animator.StringToHash("V");
+		aimBool = Animator.StringToHash("Aim");
 		// fly
-		//groundedBool = Animator.StringToHash("Grounded");
+		flyBool = Animator.StringToHash ("Fly");
+		groundedBool = Animator.StringToHash("Grounded");
 		distToGround = GetComponent<Collider>().bounds.extents.y;
 		sprintFactor = sprintSpeed / runSpeed;
 
-        //stamina
-        staminaScript = GetComponent<Stamina>();
+		//stamina
+		staminaScript = GetComponent<Stamina>();
 
 
 		//sounds
@@ -87,10 +88,9 @@ public class PlayerControl : MonoBehaviour
 	void Update()
 	{
 		// fly
-		/*
 		if(Input.GetButtonDown ("Fly"))
 			fly = !fly;
-		*/
+		aim = Input.GetButton("Aim");
 		h = Input.GetAxis("Horizontal");
 		v = Input.GetAxis("Vertical");
 		run = Input.GetButton ("Run");
@@ -100,10 +100,30 @@ public class PlayerControl : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		MovementManagement (h, v, run, sprint);
-		//JumpManagement ();
+		anim.SetBool (aimBool, IsAiming());
+		anim.SetFloat(hFloat, h);
+		anim.SetFloat(vFloat, v);
+
+		// Fly
+		anim.SetBool (flyBool, fly);
+		GetComponent<Rigidbody>().useGravity = !fly;
+		anim.SetBool (groundedBool, IsGrounded ());
+		if(fly)
+			FlyManagement(h,v);
+
+		else
+		{
+			MovementManagement (h, v, run, sprint);
+			JumpManagement ();
+		}
 	}
 
+	// fly
+	void FlyManagement(float horizontal, float vertical)
+	{
+		Vector3 direction = Rotating(horizontal, vertical);
+		GetComponent<Rigidbody>().AddForce(direction * flySpeed * 100 * (sprint?sprintFactor:1));
+	}
 
 	void JumpManagement()
 	{
@@ -130,9 +150,7 @@ public class PlayerControl : MonoBehaviour
 
 		if(isMoving)
 		{
-            float current_stamina = staminaScript.getCurrentStamina();
-
-			if (sprinting && current_stamina > 0)
+			if(sprinting)
 			{
 				audioSource.clip = runSound;
 				if (!audioSource.isPlaying) {
@@ -140,11 +158,11 @@ public class PlayerControl : MonoBehaviour
 				}
 				speed = sprintSpeed;
 			}
-			else if (running && current_stamina > 0)
+			else if (running)
 			{
 				speed = runSpeed;
-                
-            }
+
+			}
 			else
 			{
 				audioSource.clip = walkSound;
@@ -152,14 +170,10 @@ public class PlayerControl : MonoBehaviour
 					audioSource.Play ();
 				}
 				speed = walkSpeed;
-                //recover stamina
-                staminaScript.changeStamina(-0.01f);
-            }
-			Debug.Log ("Speed = " + speed);
+			}
 
-           
-            staminaScript.changeStamina(speed / 200f);
-            
+			staminaScript.changeStamina(speed / 200f);
+
 			anim.SetFloat(speedFloat, speed, speedDampTime, Time.deltaTime);
 		}
 		else
@@ -167,10 +181,9 @@ public class PlayerControl : MonoBehaviour
 			audioSource.Stop ();
 			speed = 0f;
 			anim.SetFloat(speedFloat, 0f);
-            //recover stamina
-            staminaScript.changeStamina(-0.01f);
-        }
-		GetComponent<Rigidbody>().AddForce(Vector3.forward * 40);
+			staminaScript.changeStamina(-0.5f);
+		}
+		GetComponent<Rigidbody>().AddForce(Vector3.forward*speed);
 	}
 
 	Vector3 Rotating(float horizontal, float vertical)
