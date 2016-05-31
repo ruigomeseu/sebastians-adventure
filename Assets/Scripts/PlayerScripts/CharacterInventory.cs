@@ -118,8 +118,7 @@ public class CharacterInventory : MonoBehaviour {
 					picked = true; // sets object to appear
 					pickedObjectTexture = temp.objTexture; //sets texture to appear
 					pickedObjectRect = new Rect(temp.pickedObjX,temp.pickedObjY,temp.pickedObjWidth,temp.PickedObjHeight);
-					Debug.Log (temp.pickedObjX);
-					Debug.Log (temp.pickedObjY);
+				
 					Destroy (go);
 				}
 			}

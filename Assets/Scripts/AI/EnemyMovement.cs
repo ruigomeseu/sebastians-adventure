@@ -28,8 +28,7 @@ public class EnemyMovement : MonoBehaviour
     {
 		float currentDistance = Vector3.Distance (nav.transform.position, player.transform.position);
 
-		Debug.Log (currentDistance);
-        // If the enemy is close enough
+		// If the enemy is close enough
 		if (currentDistance <= 140/100) {
 			animator.SetBool (movingBool, false);
 		}

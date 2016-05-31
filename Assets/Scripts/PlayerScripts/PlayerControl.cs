@@ -60,13 +60,12 @@ public class PlayerControl : MonoBehaviour
 		cameraTransform = Camera.main.transform;
 
 		speedFloat = Animator.StringToHash("Speed");
-		jumpBool = Animator.StringToHash("Jump");
-		hFloat = Animator.StringToHash("H");
-		vFloat = Animator.StringToHash("V");
-		aimBool = Animator.StringToHash("Aim");
+		//jumpBool = Animator.StringToHash("Jump");
+		//hFloat = Animator.StringToHash("H");
+		//vFloat = Animator.StringToHash("V");
+		//aimBool = Animator.StringToHash("Aim");
 		// fly
-		flyBool = Animator.StringToHash ("Fly");
-		groundedBool = Animator.StringToHash("Grounded");
+		//groundedBool = Animator.StringToHash("Grounded");
 		distToGround = GetComponent<Collider>().bounds.extents.y;
 		sprintFactor = sprintSpeed / runSpeed;
 
@@ -88,9 +87,10 @@ public class PlayerControl : MonoBehaviour
 	void Update()
 	{
 		// fly
+		/*
 		if(Input.GetButtonDown ("Fly"))
 			fly = !fly;
-		aim = Input.GetButton("Aim");
+		*/
 		h = Input.GetAxis("Horizontal");
 		v = Input.GetAxis("Vertical");
 		run = Input.GetButton ("Run");
@@ -100,30 +100,10 @@ public class PlayerControl : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		anim.SetBool (aimBool, IsAiming());
-		anim.SetFloat(hFloat, h);
-		anim.SetFloat(vFloat, v);
-		
-		// Fly
-		anim.SetBool (flyBool, fly);
-		GetComponent<Rigidbody>().useGravity = !fly;
-		anim.SetBool (groundedBool, IsGrounded ());
-		if(fly)
-			FlyManagement(h,v);
-
-		else
-		{
-			MovementManagement (h, v, run, sprint);
-			JumpManagement ();
-		}
+		MovementManagement (h, v, run, sprint);
+		//JumpManagement ();
 	}
 
-	// fly
-	void FlyManagement(float horizontal, float vertical)
-	{
-		Vector3 direction = Rotating(horizontal, vertical);
-		GetComponent<Rigidbody>().AddForce(direction * flySpeed * 100 * (sprint?sprintFactor:1));
-	}
 
 	void JumpManagement()
 	{
@@ -152,7 +132,7 @@ public class PlayerControl : MonoBehaviour
 		{
             float current_stamina = staminaScript.getCurrentStamina();
 
-            if (sprinting && current_stamina > 0)
+			if (sprinting && current_stamina > 0)
 			{
 				audioSource.clip = runSound;
 				if (!audioSource.isPlaying) {
@@ -175,6 +155,8 @@ public class PlayerControl : MonoBehaviour
                 //recover stamina
                 staminaScript.changeStamina(-0.01f);
             }
+			Debug.Log ("Speed = " + speed);
+
            
             staminaScript.changeStamina(speed / 200f);
             
@@ -188,7 +170,7 @@ public class PlayerControl : MonoBehaviour
             //recover stamina
             staminaScript.changeStamina(-0.01f);
         }
-		GetComponent<Rigidbody>().AddForce(Vector3.forward*speed);
+		GetComponent<Rigidbody>().AddForce(Vector3.forward * 40);
 	}
 
 	Vector3 Rotating(float horizontal, float vertical)

@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: ab67927164c2b421cb2a309fbdaca657
+timeCreated: 1464703730
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Camera
+    100004: chest
+    100006: fing.L
+    100008: fing.L.001
+    100010: fing.L.001_end
+    100012: fing.R
+    100014: fing.R.001
+    100016: fing.R.001_end
+    100018: foor roll.L
+    100020: foor roll.R
+    100022: foot.L
+    100024: foot.R
+    100026: hand.L
+    100028: hand.R
+    100030: head
+    100032: head_end
+    100034: Lamp
+    100036: Lamp.001
+    100038: Lamp.002
+    100040: Lamp.003
+    100042: larm.L
+    100044: larm.L.001
+    100046: larm.L.002
+    100048: larm.L.002_end
+    100050: larm.R
+    100052: larm.R.001
+    100054: larm.R.002
+    100056: larm.R.002_end
+    100058: leg control.L
+    100060: leg control.R
+    100062: leg ik.L
+    100064: leg ik.L_end
+    100066: leg ik.R
+    100068: leg ik.R_end
+    100070: leg pole target.L
+    100072: leg pole target.L_end
+    100074: leg pole target.R
+    100076: leg pole target.R_end
+    100078: lowerleg.L
+    100080: lowerleg.L_end
+    100082: lowerleg.R
+    100084: lowerleg.R_end
+    100086: neck
+    100088: root
+    100090: Sebastian
+    100092: Sun
+    100094: Sun.001
+    100096: Sun.002
+    100098: Sun.003
+    100100: toes control.L
+    100102: toes control.L_end
+    100104: toes control.R
+    100106: toes control.R_end
+    100108: toes.L
+    100110: toes.L_end
+    100112: toes.R
+    100114: toes.R_end
+    100116: torso
+    100118: uparm.L
+    100120: uparm.R
+    100122: upper leg.L
+    100124: upper leg.R
+    100126: //RootNode
+    400000: Armature
+    400002: Camera
+    400004: chest
+    400006: fing.L
+    400008: fing.L.001
+    400010: fing.L.001_end
+    400012: fing.R
+    400014: fing.R.001
+    400016: fing.R.001_end
+    400018: foor roll.L
+    400020: foor roll.R
+    400022: foot.L
+    400024: foot.R
+    400026: hand.L
+    400028: hand.R
+    400030: head
+    400032: head_end
+    400034: Lamp
+    400036: Lamp.001
+    400038: Lamp.002
+    400040: Lamp.003
+    400042: larm.L
+    400044: larm.L.001
+    400046: larm.L.002
+    400048: larm.L.002_end
+    400050: larm.R
+    400052: larm.R.001
+    400054: larm.R.002
+    400056: larm.R.002_end
+    400058: leg control.L
+    400060: leg control.R
+    400062: leg ik.L
+    400064: leg ik.L_end
+    400066: leg ik.R
+    400068: leg ik.R_end
+    400070: leg pole target.L
+    400072: leg pole target.L_end
+    400074: leg pole target.R
+    400076: leg pole target.R_end
+    400078: lowerleg.L
+    400080: lowerleg.L_end
+    400082: lowerleg.R
+    400084: lowerleg.R_end
+    400086: neck
+    400088: root
+    400090: Sebastian
+    400092: Sun
+    400094: Sun.001
+    400096: Sun.002
+    400098: Sun.003
+    400100: toes control.L
+    400102: toes control.L_end
+    400104: toes control.R
+    400106: toes control.R_end
+    400108: toes.L
+    400110: toes.L_end
+    400112: toes.R
+    400114: toes.R_end
+    400116: torso
+    400118: uparm.L
+    400120: uparm.R
+    400122: upper leg.L
+    400124: upper leg.R
+    400126: //RootNode
+    4300000: Sebastian
+    7400000: Armature|ArmatureAction.002
+    9500000: //RootNode
+    13700000: Sebastian
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.3
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
