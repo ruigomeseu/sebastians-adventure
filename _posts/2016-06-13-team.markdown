@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Team"
+date:   2016-06-13 12:00:00
+categories: main
+---
+
+Sebatian's Adventure is a game created for the [Computer Games Development](https://sigarra.up.pt/feup/en/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=368731) class by a multidisciplinary team.
+
+### Computer Engineering
+
+- José Melo - ei12050@fe.up.pt
+- Ricardo Loureiro - ei12034@fe.up.pt
+- Rui Gomes - ei12038@fe.up.pt
+- Tiago Ferreira - ei12051@fe.up.pt
+
+Responsible for the implementation of the mechanics in Unity, the development of this website and the composition of the game storyline.
+
+### Design
+
+- Beatriz Carvalho
+- Marina Pinto
+- Sara Bruna Martins
+
+Responsible for the conception of all art and design assets used in the game.
+
+### Multimedia
+
+- Hugo Edgar Mesquita
+- Matheus Scarlatti Belucio
+
+Responsible for the sound design, footsteps, voices and ambient sound.

@@ -239,3 +239,7 @@ a {
 
 .site-footer-credits {
   color: #819198; }
+
+.project-name > a {
+  color: #FFFFFF;
+}
