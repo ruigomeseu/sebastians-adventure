@@ -16,8 +16,6 @@ public class EnemyMovement : MonoBehaviour
     {
         // Set up the references.
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        //playerHealth = player.GetComponent<PlayerHealth>();
-        //enemyHealth = GetComponent<EnemyHealth>();
         nav = GetComponent<NavMeshAgent>();
 		animator = GetComponent<Animator> ();
 		movingBool = Animator.StringToHash ("isMoving");
@@ -46,4 +44,13 @@ public class EnemyMovement : MonoBehaviour
 			animator.SetBool (movingBool, false);
         }
     }
+
+	void OnCollisionEnter (Collision col)
+	{
+		if(col.gameObject.name == "rock")
+		{
+			Destroy(this);
+		}
+	}
+
 } 
