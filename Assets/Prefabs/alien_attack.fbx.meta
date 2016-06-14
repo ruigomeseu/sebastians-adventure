@@ -1,0 +1,2347 @@
+fileFormatVersion: 2
+guid: 064aed715b9b947cf90a7e8ee216e6b6
+timeCreated: 1465912356
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Armature
+    100004: Camera
+    100006: chest
+    100008: circulo que faz boca 2
+    100010: foor roll.L
+    100012: foor roll.R
+    100014: foot.L
+    100016: foot.R
+    100018: Hair
+    100020: Hair_end
+    100022: hand.L
+    100024: hand.L_end
+    100026: hand.R
+    100028: hand.R_end
+    100030: head
+    100032: larm.L
+    100034: larm.R
+    100036: leg control.L
+    100038: leg control.R
+    100040: leg ik.L
+    100042: leg ik.L_end
+    100044: leg ik.R
+    100046: leg ik.R_end
+    100048: leg pole target.L
+    100050: leg pole target.L_end
+    100052: leg pole target.R
+    100054: leg pole target.R_end
+    100056: lowerleg.L
+    100058: lowerleg.L_end
+    100060: lowerleg.R
+    100062: lowerleg.R_end
+    100064: monstro_1
+    100066: monstro_1_olho_1
+    100068: monstro_1_riscas
+    100070: monstro_1_sobrancelhas
+    100072: montro_1_boca
+    100074: root
+    100076: Sun
+    100078: Sun.001
+    100080: Sun.002
+    100082: Sun.003
+    100084: Sun.004
+    100086: Sun.005
+    100088: toes control.L
+    100090: toes control.L_end
+    100092: toes control.R
+    100094: toes control.R_end
+    100096: toes.L
+    100098: toes.L_end
+    100100: toes.R
+    100102: toes.R_end
+    100104: torso
+    100106: uparm.L
+    100108: uparm.R
+    100110: upper leg.L
+    100112: upper leg.R
+    400000: //RootNode
+    400002: Armature
+    400004: Camera
+    400006: chest
+    400008: circulo que faz boca 2
+    400010: foor roll.L
+    400012: foor roll.R
+    400014: foot.L
+    400016: foot.R
+    400018: Hair
+    400020: Hair_end
+    400022: hand.L
+    400024: hand.L_end
+    400026: hand.R
+    400028: hand.R_end
+    400030: head
+    400032: larm.L
+    400034: larm.R
+    400036: leg control.L
+    400038: leg control.R
+    400040: leg ik.L
+    400042: leg ik.L_end
+    400044: leg ik.R
+    400046: leg ik.R_end
+    400048: leg pole target.L
+    400050: leg pole target.L_end
+    400052: leg pole target.R
+    400054: leg pole target.R_end
+    400056: lowerleg.L
+    400058: lowerleg.L_end
+    400060: lowerleg.R
+    400062: lowerleg.R_end
+    400064: monstro_1
+    400066: monstro_1_olho_1
+    400068: monstro_1_riscas
+    400070: monstro_1_sobrancelhas
+    400072: montro_1_boca
+    400074: root
+    400076: Sun
+    400078: Sun.001
+    400080: Sun.002
+    400082: Sun.003
+    400084: Sun.004
+    400086: Sun.005
+    400088: toes control.L
+    400090: toes control.L_end
+    400092: toes control.R
+    400094: toes control.R_end
+    400096: toes.L
+    400098: toes.L_end
+    400100: toes.R
+    400102: toes.R_end
+    400104: torso
+    400106: uparm.L
+    400108: uparm.R
+    400110: upper leg.L
+    400112: upper leg.R
+    2300000: circulo que faz boca 2
+    2300002: monstro_1_olho_1
+    2300004: monstro_1_riscas
+    2300006: montro_1_boca
+    3300000: circulo que faz boca 2
+    3300002: monstro_1_olho_1
+    3300004: monstro_1_riscas
+    3300006: montro_1_boca
+    4300000: circulo que faz boca 2
+    4300002: monstro_1_riscas
+    4300004: montro_1_boca
+    4300006: monstro_1_sobrancelhas
+    4300008: monstro_1_olho_1
+    4300010: monstro_1
+    7400000: Sun.005|walkcycle
+    7400002: Sun.004|walkcycle
+    7400004: Sun.003|walkcycle
+    7400006: Sun.002|walkcycle
+    7400008: Sun.001|walkcycle
+    7400010: circulo que faz boca 2|walkcycle
+    7400012: Sun|walkcycle
+    7400014: Camera|walkcycle
+    7400016: Armature|ArmatureAction
+    7400018: Armature|walkcycle
+    7400020: monstro_1_riscas|walkcycle
+    7400022: montro_1_boca|walkcycle
+    7400024: monstro_1_sobrancelhas|walkcycle
+    7400026: monstro_1_olho_1|walkcycle
+    7400028: monstro_1|walkcycle
+    9500000: //RootNode
+    13700000: monstro_1
+    13700002: monstro_1_sobrancelhas
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Sun.005|walkcycle
+      takeName: Sun.005|walkcycle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/leg control.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L/leg ik.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L/toes control.L_end
+        weight: 1
+      - path: Armature/root/leg control.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R/leg ik.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R/toes.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R/toes control.R_end
+        weight: 1
+      - path: Armature/root/leg pole target.L
+        weight: 1
+      - path: Armature/root/leg pole target.L/leg pole target.L_end
+        weight: 1
+      - path: Armature/root/leg pole target.R
+        weight: 1
+      - path: Armature/root/leg pole target.R/leg pole target.R_end
+        weight: 1
+      - path: Armature/root/torso
+        weight: 1
+      - path: Armature/root/torso/chest
+        weight: 1
+      - path: Armature/root/torso/chest/head
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair/Hair_end
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_olho_1
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_riscas
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_sobrancelhas
+        weight: 1
+      - path: Armature/root/torso/chest/montro_1_boca
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L/hand.L_end
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R/hand.R_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L/lowerleg.L_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R/lowerleg.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: circulo que faz boca 2
+        weight: 1
+      - path: monstro_1
+        weight: 1
+      - path: Sun
+        weight: 1
+      - path: Sun.001
+        weight: 1
+      - path: Sun.002
+        weight: 1
+      - path: Sun.003
+        weight: 1
+      - path: Sun.004
+        weight: 1
+      - path: Sun.005
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sun.004|walkcycle
+      takeName: Sun.004|walkcycle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/leg control.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L/leg ik.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L/toes control.L_end
+        weight: 1
+      - path: Armature/root/leg control.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R/leg ik.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R/toes.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R/toes control.R_end
+        weight: 1
+      - path: Armature/root/leg pole target.L
+        weight: 1
+      - path: Armature/root/leg pole target.L/leg pole target.L_end
+        weight: 1
+      - path: Armature/root/leg pole target.R
+        weight: 1
+      - path: Armature/root/leg pole target.R/leg pole target.R_end
+        weight: 1
+      - path: Armature/root/torso
+        weight: 1
+      - path: Armature/root/torso/chest
+        weight: 1
+      - path: Armature/root/torso/chest/head
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair/Hair_end
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_olho_1
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_riscas
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_sobrancelhas
+        weight: 1
+      - path: Armature/root/torso/chest/montro_1_boca
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L/hand.L_end
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R/hand.R_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L/lowerleg.L_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R/lowerleg.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: circulo que faz boca 2
+        weight: 1
+      - path: monstro_1
+        weight: 1
+      - path: Sun
+        weight: 1
+      - path: Sun.001
+        weight: 1
+      - path: Sun.002
+        weight: 1
+      - path: Sun.003
+        weight: 1
+      - path: Sun.004
+        weight: 1
+      - path: Sun.005
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sun.003|walkcycle
+      takeName: Sun.003|walkcycle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/leg control.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L/leg ik.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L/toes control.L_end
+        weight: 1
+      - path: Armature/root/leg control.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R/leg ik.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R/toes.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R/toes control.R_end
+        weight: 1
+      - path: Armature/root/leg pole target.L
+        weight: 1
+      - path: Armature/root/leg pole target.L/leg pole target.L_end
+        weight: 1
+      - path: Armature/root/leg pole target.R
+        weight: 1
+      - path: Armature/root/leg pole target.R/leg pole target.R_end
+        weight: 1
+      - path: Armature/root/torso
+        weight: 1
+      - path: Armature/root/torso/chest
+        weight: 1
+      - path: Armature/root/torso/chest/head
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair/Hair_end
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_olho_1
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_riscas
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_sobrancelhas
+        weight: 1
+      - path: Armature/root/torso/chest/montro_1_boca
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L/hand.L_end
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R/hand.R_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L/lowerleg.L_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R/lowerleg.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: circulo que faz boca 2
+        weight: 1
+      - path: monstro_1
+        weight: 1
+      - path: Sun
+        weight: 1
+      - path: Sun.001
+        weight: 1
+      - path: Sun.002
+        weight: 1
+      - path: Sun.003
+        weight: 1
+      - path: Sun.004
+        weight: 1
+      - path: Sun.005
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sun.002|walkcycle
+      takeName: Sun.002|walkcycle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/leg control.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L/leg ik.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L/toes control.L_end
+        weight: 1
+      - path: Armature/root/leg control.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R/leg ik.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R/toes.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R/toes control.R_end
+        weight: 1
+      - path: Armature/root/leg pole target.L
+        weight: 1
+      - path: Armature/root/leg pole target.L/leg pole target.L_end
+        weight: 1
+      - path: Armature/root/leg pole target.R
+        weight: 1
+      - path: Armature/root/leg pole target.R/leg pole target.R_end
+        weight: 1
+      - path: Armature/root/torso
+        weight: 1
+      - path: Armature/root/torso/chest
+        weight: 1
+      - path: Armature/root/torso/chest/head
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair/Hair_end
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_olho_1
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_riscas
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_sobrancelhas
+        weight: 1
+      - path: Armature/root/torso/chest/montro_1_boca
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L/hand.L_end
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R/hand.R_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L/lowerleg.L_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R/lowerleg.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: circulo que faz boca 2
+        weight: 1
+      - path: monstro_1
+        weight: 1
+      - path: Sun
+        weight: 1
+      - path: Sun.001
+        weight: 1
+      - path: Sun.002
+        weight: 1
+      - path: Sun.003
+        weight: 1
+      - path: Sun.004
+        weight: 1
+      - path: Sun.005
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sun.001|walkcycle
+      takeName: Sun.001|walkcycle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/leg control.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L/leg ik.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L/toes control.L_end
+        weight: 1
+      - path: Armature/root/leg control.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R/leg ik.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R/toes.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R/toes control.R_end
+        weight: 1
+      - path: Armature/root/leg pole target.L
+        weight: 1
+      - path: Armature/root/leg pole target.L/leg pole target.L_end
+        weight: 1
+      - path: Armature/root/leg pole target.R
+        weight: 1
+      - path: Armature/root/leg pole target.R/leg pole target.R_end
+        weight: 1
+      - path: Armature/root/torso
+        weight: 1
+      - path: Armature/root/torso/chest
+        weight: 1
+      - path: Armature/root/torso/chest/head
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair/Hair_end
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_olho_1
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_riscas
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_sobrancelhas
+        weight: 1
+      - path: Armature/root/torso/chest/montro_1_boca
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L/hand.L_end
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R/hand.R_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L/lowerleg.L_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R/lowerleg.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: circulo que faz boca 2
+        weight: 1
+      - path: monstro_1
+        weight: 1
+      - path: Sun
+        weight: 1
+      - path: Sun.001
+        weight: 1
+      - path: Sun.002
+        weight: 1
+      - path: Sun.003
+        weight: 1
+      - path: Sun.004
+        weight: 1
+      - path: Sun.005
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: circulo que faz boca 2|walkcycle
+      takeName: circulo que faz boca 2|walkcycle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/leg control.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L/leg ik.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L/toes control.L_end
+        weight: 1
+      - path: Armature/root/leg control.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R/leg ik.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R/toes.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R/toes control.R_end
+        weight: 1
+      - path: Armature/root/leg pole target.L
+        weight: 1
+      - path: Armature/root/leg pole target.L/leg pole target.L_end
+        weight: 1
+      - path: Armature/root/leg pole target.R
+        weight: 1
+      - path: Armature/root/leg pole target.R/leg pole target.R_end
+        weight: 1
+      - path: Armature/root/torso
+        weight: 1
+      - path: Armature/root/torso/chest
+        weight: 1
+      - path: Armature/root/torso/chest/head
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair/Hair_end
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_olho_1
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_riscas
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_sobrancelhas
+        weight: 1
+      - path: Armature/root/torso/chest/montro_1_boca
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L/hand.L_end
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R/hand.R_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L/lowerleg.L_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R/lowerleg.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: circulo que faz boca 2
+        weight: 1
+      - path: monstro_1
+        weight: 1
+      - path: Sun
+        weight: 1
+      - path: Sun.001
+        weight: 1
+      - path: Sun.002
+        weight: 1
+      - path: Sun.003
+        weight: 1
+      - path: Sun.004
+        weight: 1
+      - path: Sun.005
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sun|walkcycle
+      takeName: Sun|walkcycle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/leg control.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L/leg ik.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L/toes control.L_end
+        weight: 1
+      - path: Armature/root/leg control.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R/leg ik.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R/toes.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R/toes control.R_end
+        weight: 1
+      - path: Armature/root/leg pole target.L
+        weight: 1
+      - path: Armature/root/leg pole target.L/leg pole target.L_end
+        weight: 1
+      - path: Armature/root/leg pole target.R
+        weight: 1
+      - path: Armature/root/leg pole target.R/leg pole target.R_end
+        weight: 1
+      - path: Armature/root/torso
+        weight: 1
+      - path: Armature/root/torso/chest
+        weight: 1
+      - path: Armature/root/torso/chest/head
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair/Hair_end
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_olho_1
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_riscas
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_sobrancelhas
+        weight: 1
+      - path: Armature/root/torso/chest/montro_1_boca
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L/hand.L_end
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R/hand.R_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L/lowerleg.L_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R/lowerleg.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: circulo que faz boca 2
+        weight: 1
+      - path: monstro_1
+        weight: 1
+      - path: Sun
+        weight: 1
+      - path: Sun.001
+        weight: 1
+      - path: Sun.002
+        weight: 1
+      - path: Sun.003
+        weight: 1
+      - path: Sun.004
+        weight: 1
+      - path: Sun.005
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Camera|walkcycle
+      takeName: Camera|walkcycle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/leg control.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L/leg ik.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L/toes control.L_end
+        weight: 1
+      - path: Armature/root/leg control.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R/leg ik.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R/toes.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R/toes control.R_end
+        weight: 1
+      - path: Armature/root/leg pole target.L
+        weight: 1
+      - path: Armature/root/leg pole target.L/leg pole target.L_end
+        weight: 1
+      - path: Armature/root/leg pole target.R
+        weight: 1
+      - path: Armature/root/leg pole target.R/leg pole target.R_end
+        weight: 1
+      - path: Armature/root/torso
+        weight: 1
+      - path: Armature/root/torso/chest
+        weight: 1
+      - path: Armature/root/torso/chest/head
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair/Hair_end
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_olho_1
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_riscas
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_sobrancelhas
+        weight: 1
+      - path: Armature/root/torso/chest/montro_1_boca
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L/hand.L_end
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R/hand.R_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L/lowerleg.L_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R/lowerleg.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: circulo que faz boca 2
+        weight: 1
+      - path: monstro_1
+        weight: 1
+      - path: Sun
+        weight: 1
+      - path: Sun.001
+        weight: 1
+      - path: Sun.002
+        weight: 1
+      - path: Sun.003
+        weight: 1
+      - path: Sun.004
+        weight: 1
+      - path: Sun.005
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/leg control.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L/leg ik.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L/toes control.L_end
+        weight: 1
+      - path: Armature/root/leg control.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R/leg ik.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R/toes.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R/toes control.R_end
+        weight: 1
+      - path: Armature/root/leg pole target.L
+        weight: 1
+      - path: Armature/root/leg pole target.L/leg pole target.L_end
+        weight: 1
+      - path: Armature/root/leg pole target.R
+        weight: 1
+      - path: Armature/root/leg pole target.R/leg pole target.R_end
+        weight: 1
+      - path: Armature/root/torso
+        weight: 1
+      - path: Armature/root/torso/chest
+        weight: 1
+      - path: Armature/root/torso/chest/head
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair/Hair_end
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_olho_1
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_riscas
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_sobrancelhas
+        weight: 1
+      - path: Armature/root/torso/chest/montro_1_boca
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L/hand.L_end
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R/hand.R_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L/lowerleg.L_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R/lowerleg.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: circulo que faz boca 2
+        weight: 1
+      - path: monstro_1
+        weight: 1
+      - path: Sun
+        weight: 1
+      - path: Sun.001
+        weight: 1
+      - path: Sun.002
+        weight: 1
+      - path: Sun.003
+        weight: 1
+      - path: Sun.004
+        weight: 1
+      - path: Sun.005
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|walkcycle
+      takeName: Armature|walkcycle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/leg control.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L/leg ik.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L/toes control.L_end
+        weight: 1
+      - path: Armature/root/leg control.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R/leg ik.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R/toes.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R/toes control.R_end
+        weight: 1
+      - path: Armature/root/leg pole target.L
+        weight: 1
+      - path: Armature/root/leg pole target.L/leg pole target.L_end
+        weight: 1
+      - path: Armature/root/leg pole target.R
+        weight: 1
+      - path: Armature/root/leg pole target.R/leg pole target.R_end
+        weight: 1
+      - path: Armature/root/torso
+        weight: 1
+      - path: Armature/root/torso/chest
+        weight: 1
+      - path: Armature/root/torso/chest/head
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair/Hair_end
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_olho_1
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_riscas
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_sobrancelhas
+        weight: 1
+      - path: Armature/root/torso/chest/montro_1_boca
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L/hand.L_end
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R/hand.R_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L/lowerleg.L_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R/lowerleg.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: circulo que faz boca 2
+        weight: 1
+      - path: monstro_1
+        weight: 1
+      - path: Sun
+        weight: 1
+      - path: Sun.001
+        weight: 1
+      - path: Sun.002
+        weight: 1
+      - path: Sun.003
+        weight: 1
+      - path: Sun.004
+        weight: 1
+      - path: Sun.005
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: monstro_1_riscas|walkcycle
+      takeName: monstro_1_riscas|walkcycle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/leg control.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L/leg ik.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L/toes control.L_end
+        weight: 1
+      - path: Armature/root/leg control.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R/leg ik.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R/toes.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R/toes control.R_end
+        weight: 1
+      - path: Armature/root/leg pole target.L
+        weight: 1
+      - path: Armature/root/leg pole target.L/leg pole target.L_end
+        weight: 1
+      - path: Armature/root/leg pole target.R
+        weight: 1
+      - path: Armature/root/leg pole target.R/leg pole target.R_end
+        weight: 1
+      - path: Armature/root/torso
+        weight: 1
+      - path: Armature/root/torso/chest
+        weight: 1
+      - path: Armature/root/torso/chest/head
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair/Hair_end
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_olho_1
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_riscas
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_sobrancelhas
+        weight: 1
+      - path: Armature/root/torso/chest/montro_1_boca
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L/hand.L_end
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R/hand.R_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L/lowerleg.L_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R/lowerleg.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: circulo que faz boca 2
+        weight: 1
+      - path: monstro_1
+        weight: 1
+      - path: Sun
+        weight: 1
+      - path: Sun.001
+        weight: 1
+      - path: Sun.002
+        weight: 1
+      - path: Sun.003
+        weight: 1
+      - path: Sun.004
+        weight: 1
+      - path: Sun.005
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: montro_1_boca|walkcycle
+      takeName: montro_1_boca|walkcycle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/leg control.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L/leg ik.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L/toes control.L_end
+        weight: 1
+      - path: Armature/root/leg control.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R/leg ik.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R/toes.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R/toes control.R_end
+        weight: 1
+      - path: Armature/root/leg pole target.L
+        weight: 1
+      - path: Armature/root/leg pole target.L/leg pole target.L_end
+        weight: 1
+      - path: Armature/root/leg pole target.R
+        weight: 1
+      - path: Armature/root/leg pole target.R/leg pole target.R_end
+        weight: 1
+      - path: Armature/root/torso
+        weight: 1
+      - path: Armature/root/torso/chest
+        weight: 1
+      - path: Armature/root/torso/chest/head
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair/Hair_end
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_olho_1
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_riscas
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_sobrancelhas
+        weight: 1
+      - path: Armature/root/torso/chest/montro_1_boca
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L/hand.L_end
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R/hand.R_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L/lowerleg.L_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R/lowerleg.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: circulo que faz boca 2
+        weight: 1
+      - path: monstro_1
+        weight: 1
+      - path: Sun
+        weight: 1
+      - path: Sun.001
+        weight: 1
+      - path: Sun.002
+        weight: 1
+      - path: Sun.003
+        weight: 1
+      - path: Sun.004
+        weight: 1
+      - path: Sun.005
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: monstro_1_sobrancelhas|walkcycle
+      takeName: monstro_1_sobrancelhas|walkcycle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/leg control.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L/leg ik.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L/toes control.L_end
+        weight: 1
+      - path: Armature/root/leg control.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R/leg ik.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R/toes.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R/toes control.R_end
+        weight: 1
+      - path: Armature/root/leg pole target.L
+        weight: 1
+      - path: Armature/root/leg pole target.L/leg pole target.L_end
+        weight: 1
+      - path: Armature/root/leg pole target.R
+        weight: 1
+      - path: Armature/root/leg pole target.R/leg pole target.R_end
+        weight: 1
+      - path: Armature/root/torso
+        weight: 1
+      - path: Armature/root/torso/chest
+        weight: 1
+      - path: Armature/root/torso/chest/head
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair/Hair_end
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_olho_1
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_riscas
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_sobrancelhas
+        weight: 1
+      - path: Armature/root/torso/chest/montro_1_boca
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L/hand.L_end
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R/hand.R_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L/lowerleg.L_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R/lowerleg.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: circulo que faz boca 2
+        weight: 1
+      - path: monstro_1
+        weight: 1
+      - path: Sun
+        weight: 1
+      - path: Sun.001
+        weight: 1
+      - path: Sun.002
+        weight: 1
+      - path: Sun.003
+        weight: 1
+      - path: Sun.004
+        weight: 1
+      - path: Sun.005
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: monstro_1_olho_1|walkcycle
+      takeName: monstro_1_olho_1|walkcycle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/leg control.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L/leg ik.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L/toes control.L_end
+        weight: 1
+      - path: Armature/root/leg control.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R/leg ik.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R/toes.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R/toes control.R_end
+        weight: 1
+      - path: Armature/root/leg pole target.L
+        weight: 1
+      - path: Armature/root/leg pole target.L/leg pole target.L_end
+        weight: 1
+      - path: Armature/root/leg pole target.R
+        weight: 1
+      - path: Armature/root/leg pole target.R/leg pole target.R_end
+        weight: 1
+      - path: Armature/root/torso
+        weight: 1
+      - path: Armature/root/torso/chest
+        weight: 1
+      - path: Armature/root/torso/chest/head
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair/Hair_end
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_olho_1
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_riscas
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_sobrancelhas
+        weight: 1
+      - path: Armature/root/torso/chest/montro_1_boca
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L/hand.L_end
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R/hand.R_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L/lowerleg.L_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R/lowerleg.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: circulo que faz boca 2
+        weight: 1
+      - path: monstro_1
+        weight: 1
+      - path: Sun
+        weight: 1
+      - path: Sun.001
+        weight: 1
+      - path: Sun.002
+        weight: 1
+      - path: Sun.003
+        weight: 1
+      - path: Sun.004
+        weight: 1
+      - path: Sun.005
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: monstro_1|walkcycle
+      takeName: monstro_1|walkcycle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/leg control.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L/leg ik.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L/toes control.L_end
+        weight: 1
+      - path: Armature/root/leg control.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R/leg ik.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R/toes.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R/toes control.R_end
+        weight: 1
+      - path: Armature/root/leg pole target.L
+        weight: 1
+      - path: Armature/root/leg pole target.L/leg pole target.L_end
+        weight: 1
+      - path: Armature/root/leg pole target.R
+        weight: 1
+      - path: Armature/root/leg pole target.R/leg pole target.R_end
+        weight: 1
+      - path: Armature/root/torso
+        weight: 1
+      - path: Armature/root/torso/chest
+        weight: 1
+      - path: Armature/root/torso/chest/head
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair/Hair_end
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_olho_1
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_riscas
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_sobrancelhas
+        weight: 1
+      - path: Armature/root/torso/chest/montro_1_boca
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L/hand.L_end
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R/hand.R_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L/lowerleg.L_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R/lowerleg.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: circulo que faz boca 2
+        weight: 1
+      - path: monstro_1
+        weight: 1
+      - path: Sun
+        weight: 1
+      - path: Sun.001
+        weight: 1
+      - path: Sun.002
+        weight: 1
+      - path: Sun.003
+        weight: 1
+      - path: Sun.004
+        weight: 1
+      - path: Sun.005
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.3
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -5,17 +5,26 @@ public class EnemyAttack : MonoBehaviour {
 
 	GameObject playerChar;
 	NavMeshAgent nav;
-	private int damage=10;
-	private double minimum_attack_distance= 20f;
-	private float lastAttack;
-	private float timeBetweenAttacks;
+	public int damage=10;
+	public double minimum_attack_distance= 20f;
+	public float lastAttack;
+	public float timeBetweenAttacks;
+
+	public int attackingBool;
+	public int movingBool;
+	Animator animator;
 
 	// Use this for initialization
 	void Start () {
 		playerChar = GameObject.FindGameObjectWithTag("Player");
 		nav = GetComponent<NavMeshAgent>();
+		animator = GetComponent<Animator> ();
+		attackingBool = Animator.StringToHash ("isAttacking");
+		movingBool = Animator.StringToHash ("isMoving");
+
+
 		lastAttack = 0f;
-		timeBetweenAttacks = 2f;
+		timeBetweenAttacks = 5f;
 	}
 
 	// Update is called once per frame
@@ -27,7 +36,20 @@ public class EnemyAttack : MonoBehaviour {
 			if ((lastAttack + timeBetweenAttacks) < Time.time) {
 				playerChar.GetComponent<PlayerSanity> ().decreaseSanity (damage);
 				lastAttack = Time.time;
+				animator.SetBool (movingBool, false);
+				animator.SetBool (attackingBool, true);
+
 			}
+		}
+
+		//checkAttackAnimation ();
+
+		Debug.Log (animator.GetBool ("isAttacking"));
+	}
+
+	void checkAttackAnimation() {
+		if (Time.time > (lastAttack + 2f)) {
+			animator.SetBool (attackingBool, false);
 		}
 	}
 }
