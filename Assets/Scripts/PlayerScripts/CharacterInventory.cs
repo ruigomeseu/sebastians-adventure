@@ -93,6 +93,7 @@ public class CharacterInventory : MonoBehaviour {
 			
 		//pick object
 		if(Input.GetKeyUp (KeyCode.E)) {
+
 			if (picked) {
 				picked = false;
 				return;
@@ -106,6 +107,9 @@ public class CharacterInventory : MonoBehaviour {
 
 
 				if (distance < 2) {
+					
+					GetComponent<PlayerControl>().anim.SetBool (GetComponent<PlayerControl>().pickingBool, true);
+
 					//play sound
 					audioSource.clip = pickedItemSound;
 					audioSource.Play ();

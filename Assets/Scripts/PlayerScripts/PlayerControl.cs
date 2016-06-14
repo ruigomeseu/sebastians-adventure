@@ -4,8 +4,8 @@ using System.Collections;
 public class PlayerControl : MonoBehaviour
 {
 
-	public float walkSpeed = 0.15f;
-	public float runSpeed = 1.0f;
+	public float walkSpeed = 20.0f;
+	public float runSpeed = 8f;
 	public float sprintSpeed = 2.0f;
 	public float flySpeed = 4.0f;
 
@@ -22,7 +22,7 @@ public class PlayerControl : MonoBehaviour
 
 	private Vector3 lastDirection;
 
-	private Animator anim;
+	public Animator anim;
 	private int speedFloat;
 	private int jumpBool;
 	private int hFloat;
@@ -31,6 +31,7 @@ public class PlayerControl : MonoBehaviour
 	private int flyBool;
 	private int groundedBool;
 	private Transform cameraTransform;
+	public int pickingBool;
 
 	private float h;
 	private float v;
@@ -59,6 +60,7 @@ public class PlayerControl : MonoBehaviour
 		anim = GetComponent<Animator> ();
 		cameraTransform = Camera.main.transform;
 
+		pickingBool = Animator.StringToHash("Picking");
 		speedFloat = Animator.StringToHash("Speed");
 		jumpBool = Animator.StringToHash("Jump");
 		hFloat = Animator.StringToHash("H");
@@ -108,22 +110,13 @@ public class PlayerControl : MonoBehaviour
 		anim.SetBool (flyBool, fly);
 		GetComponent<Rigidbody>().useGravity = !fly;
 		anim.SetBool (groundedBool, IsGrounded ());
-		if(fly)
-			FlyManagement(h,v);
 
-		else
-		{
-			MovementManagement (h, v, run, sprint);
-			JumpManagement ();
-		}
+
+		MovementManagement (h, v, run, sprint);
+		JumpManagement ();
+
 	}
 
-	// fly
-	void FlyManagement(float horizontal, float vertical)
-	{
-		Vector3 direction = Rotating(horizontal, vertical);
-		GetComponent<Rigidbody>().AddForce(direction * flySpeed * 100 * (sprint?sprintFactor:1));
-	}
 
 	void JumpManagement()
 	{
@@ -146,8 +139,7 @@ public class PlayerControl : MonoBehaviour
 
 	void MovementManagement(float horizontal, float vertical, bool running, bool sprinting)
 	{
-		Rotating(horizontal, vertical);
-
+		
 		if(isMoving)
 		{
 			if(sprinting)
@@ -158,11 +150,6 @@ public class PlayerControl : MonoBehaviour
 				}
 				speed = sprintSpeed;
 			}
-			else if (running)
-			{
-				speed = runSpeed;
-
-			}
 			else
 			{
 				audioSource.clip = walkSound;
@@ -172,21 +159,27 @@ public class PlayerControl : MonoBehaviour
 				speed = walkSpeed;
 			}
 
+			Debug.Log ("Walk Speed: " + walkSpeed);
+			Debug.Log ("Sprint Speed: " + sprintSpeed);
+			Debug.Log ("Speed: " + speed);
 			staminaScript.changeStamina(speed / 200f);
 
 			anim.SetFloat(speedFloat, speed, speedDampTime, Time.deltaTime);
+			Vector3 direction = Rotating (horizontal, vertical) * speed;
+			direction.y = GetComponent<Rigidbody> ().velocity.y;
+			GetComponent<Rigidbody> ().velocity =  direction ;
 		}
 		else
 		{
+			GetComponent<Rigidbody> ().velocity = new Vector3(-0, GetComponent<Rigidbody> ().velocity.y, 0);
 			audioSource.Stop ();
 			speed = 0f;
 			anim.SetFloat(speedFloat, 0f);
 			staminaScript.changeStamina(-0.5f);
 		}
-		GetComponent<Rigidbody>().AddForce(Vector3.forward*speed);
 	}
 
-	Vector3 Rotating(float horizontal, float vertical)
+	Vector3 Rotating (float horizontal, float vertical)
 	{
 		Vector3 forward = cameraTransform.TransformDirection(Vector3.forward);
 		if (!fly)
