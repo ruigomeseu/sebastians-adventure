@@ -3,16 +3,17 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class StartMenuScript : MonoBehaviour {
-
-	private bool gamePaused;
+	
 	private Canvas canvas;
+	private GameObject player;
 
 	// Use this for initialization
 	void Start () {	
 		canvas = this.GetComponent<Canvas> ();
-
+		player = GameObject.FindGameObjectWithTag ("Player");
+		player.GetComponent<PlayerSanity>().enabled = false;
+		player.GetComponent<Stamina>().enabled = false;
 		this.canvas.enabled = true;
-		this.gamePaused = true;
 		Time.timeScale = 0;
 		Screen.lockCursor = false;
 	}
@@ -20,8 +21,9 @@ public class StartMenuScript : MonoBehaviour {
 	public void ResumeGame() {
 		Time.timeScale = 1;
 		this.canvas.enabled = false;
-		this.gamePaused = false;
 		Screen.lockCursor = true;
+		player.GetComponent<PlayerSanity>().enabled = true;
+		player.GetComponent<Stamina>().enabled = true;
 	}
 
 	public void QuitGame() {
