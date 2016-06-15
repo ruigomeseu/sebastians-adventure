@@ -48,6 +48,8 @@ public class PlayerControl : MonoBehaviour
 	private float distToGround;
 	private float sprintFactor;
 
+
+
 	private Stamina staminaScript;
 
 	//sounds
@@ -90,14 +92,18 @@ public class PlayerControl : MonoBehaviour
 	void Update()
 	{
 		// fly
-		if(Input.GetButtonDown ("Fly"))
-			fly = !fly;
-		aim = Input.GetButton("Aim");
 		h = Input.GetAxis("Horizontal");
 		v = Input.GetAxis("Vertical");
 		run = Input.GetButton ("Run");
 		sprint = Input.GetButton ("Sprint");
 		isMoving = Mathf.Abs(h) > 0.1 || Mathf.Abs(v) > 0.1;
+
+
+		if (Input.GetButton ("Fire1")) {
+			GetComponent<ThrowObjectController> ().ThrowRock ();
+		}
+
+
 	}
 
 	void FixedUpdate()
