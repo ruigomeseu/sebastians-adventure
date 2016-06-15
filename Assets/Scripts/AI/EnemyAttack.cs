@@ -41,15 +41,5 @@ public class EnemyAttack : MonoBehaviour {
 
 			}
 		}
-
-		//checkAttackAnimation ();
-
-		Debug.Log (animator.GetBool ("isAttacking"));
-	}
-
-	void checkAttackAnimation() {
-		if (Time.time > (lastAttack + 2f)) {
-			animator.SetBool (attackingBool, false);
-		}
 	}
 }

@@ -1,0 +1,361 @@
+fileFormatVersion: 2
+guid: d343a429ec4a0441fa5a302c9173fb67
+timeCreated: 1465984047
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Armature
+    100004: Camera
+    100006: Camera.001
+    100008: chest
+    100010: circulo que faz boca 2
+    100012: foor roll.L
+    100014: foor roll.R
+    100016: foot.L
+    100018: foot.R
+    100020: Hair
+    100022: Hair_end
+    100024: hand.L
+    100026: hand.L_end
+    100028: hand.R
+    100030: hand.R_end
+    100032: head
+    100034: larm.L
+    100036: larm.R
+    100038: leg control.L
+    100040: leg control.R
+    100042: leg ik.L
+    100044: leg ik.L_end
+    100046: leg ik.R
+    100048: leg ik.R_end
+    100050: leg pole target.L
+    100052: leg pole target.L_end
+    100054: leg pole target.R
+    100056: leg pole target.R_end
+    100058: lowerleg.L
+    100060: lowerleg.L_end
+    100062: lowerleg.R
+    100064: lowerleg.R_end
+    100066: monstro_1
+    100068: monstro_1_olho_1
+    100070: monstro_1_riscas
+    100072: monstro_1_sobrancelhas
+    100074: montro_1_boca
+    100076: root
+    100078: Sun
+    100080: Sun.001
+    100082: Sun.002
+    100084: Sun.003
+    100086: Sun.004
+    100088: Sun.005
+    100090: Sun.006
+    100092: Sun.007
+    100094: Sun.008
+    100096: toes control.L
+    100098: toes control.L_end
+    100100: toes control.R
+    100102: toes control.R_end
+    100104: toes.L
+    100106: toes.L_end
+    100108: toes.R
+    100110: toes.R_end
+    100112: torso
+    100114: uparm.L
+    100116: uparm.R
+    100118: upper leg.L
+    100120: upper leg.R
+    400000: //RootNode
+    400002: Armature
+    400004: Camera
+    400006: Camera.001
+    400008: chest
+    400010: circulo que faz boca 2
+    400012: foor roll.L
+    400014: foor roll.R
+    400016: foot.L
+    400018: foot.R
+    400020: Hair
+    400022: Hair_end
+    400024: hand.L
+    400026: hand.L_end
+    400028: hand.R
+    400030: hand.R_end
+    400032: head
+    400034: larm.L
+    400036: larm.R
+    400038: leg control.L
+    400040: leg control.R
+    400042: leg ik.L
+    400044: leg ik.L_end
+    400046: leg ik.R
+    400048: leg ik.R_end
+    400050: leg pole target.L
+    400052: leg pole target.L_end
+    400054: leg pole target.R
+    400056: leg pole target.R_end
+    400058: lowerleg.L
+    400060: lowerleg.L_end
+    400062: lowerleg.R
+    400064: lowerleg.R_end
+    400066: monstro_1
+    400068: monstro_1_olho_1
+    400070: monstro_1_riscas
+    400072: monstro_1_sobrancelhas
+    400074: montro_1_boca
+    400076: root
+    400078: Sun
+    400080: Sun.001
+    400082: Sun.002
+    400084: Sun.003
+    400086: Sun.004
+    400088: Sun.005
+    400090: Sun.006
+    400092: Sun.007
+    400094: Sun.008
+    400096: toes control.L
+    400098: toes control.L_end
+    400100: toes control.R
+    400102: toes control.R_end
+    400104: toes.L
+    400106: toes.L_end
+    400108: toes.R
+    400110: toes.R_end
+    400112: torso
+    400114: uparm.L
+    400116: uparm.R
+    400118: upper leg.L
+    400120: upper leg.R
+    2300000: circulo que faz boca 2
+    2300002: monstro_1_olho_1
+    2300004: monstro_1_riscas
+    2300006: montro_1_boca
+    3300000: circulo que faz boca 2
+    3300002: monstro_1_olho_1
+    3300004: monstro_1_riscas
+    3300006: montro_1_boca
+    4300000: circulo que faz boca 2
+    4300002: monstro_1_riscas
+    4300004: montro_1_boca
+    4300006: monstro_1_sobrancelhas
+    4300008: monstro_1_olho_1
+    4300010: monstro_1
+    7400000: Armature|walkcycle
+    9500000: //RootNode
+    13700000: monstro_1
+    13700002: monstro_1_sobrancelhas
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|walkcycle
+      takeName: Armature|walkcycle
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/leg control.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L
+        weight: 1
+      - path: Armature/root/leg control.L/foor roll.L/leg ik.L/leg ik.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L
+        weight: 1
+      - path: Armature/root/leg control.L/foot.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L
+        weight: 1
+      - path: Armature/root/leg control.L/toes control.L/toes control.L_end
+        weight: 1
+      - path: Armature/root/leg control.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R
+        weight: 1
+      - path: Armature/root/leg control.R/foor roll.R/leg ik.R/leg ik.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R
+        weight: 1
+      - path: Armature/root/leg control.R/foot.R/toes.R/toes.R_end
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R
+        weight: 1
+      - path: Armature/root/leg control.R/toes control.R/toes control.R_end
+        weight: 1
+      - path: Armature/root/leg pole target.L
+        weight: 1
+      - path: Armature/root/leg pole target.L/leg pole target.L_end
+        weight: 1
+      - path: Armature/root/leg pole target.R
+        weight: 1
+      - path: Armature/root/leg pole target.R/leg pole target.R_end
+        weight: 1
+      - path: Armature/root/torso
+        weight: 1
+      - path: Armature/root/torso/chest
+        weight: 1
+      - path: Armature/root/torso/chest/head
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair
+        weight: 1
+      - path: Armature/root/torso/chest/head/Hair/Hair_end
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_olho_1
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_riscas
+        weight: 1
+      - path: Armature/root/torso/chest/monstro_1_sobrancelhas
+        weight: 1
+      - path: Armature/root/torso/chest/montro_1_boca
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.L/larm.L/hand.L/hand.L_end
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R
+        weight: 1
+      - path: Armature/root/torso/chest/uparm.R/larm.R/hand.R/hand.R_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L
+        weight: 1
+      - path: Armature/root/torso/upper leg.L/lowerleg.L/lowerleg.L_end
+        weight: 1
+      - path: Armature/root/torso/upper leg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R
+        weight: 1
+      - path: Armature/root/torso/upper leg.R/lowerleg.R/lowerleg.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Camera.001
+        weight: 1
+      - path: circulo que faz boca 2
+        weight: 1
+      - path: monstro_1
+        weight: 1
+      - path: Sun
+        weight: 1
+      - path: Sun.001
+        weight: 1
+      - path: Sun.002
+        weight: 1
+      - path: Sun.003
+        weight: 1
+      - path: Sun.004
+        weight: 1
+      - path: Sun.005
+        weight: 1
+      - path: Sun.006
+        weight: 1
+      - path: Sun.007
+        weight: 1
+      - path: Sun.008
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

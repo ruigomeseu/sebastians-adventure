@@ -10,15 +10,22 @@ public class EnemyMovement : MonoBehaviour
     public float minimum_distance = 50f;
 
 	private int movingBool;
+	private int attackingBool;
 	private Animator animator;
+
+	private float lastStopAnimation;
+
 
     void Awake()
     {
         // Set up the references.
+		lastStopAnimation = Time.time;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         nav = GetComponent<NavMeshAgent>();
 		animator = GetComponent<Animator> ();
 		movingBool = Animator.StringToHash ("isMoving");
+		attackingBool = Animator.StringToHash ("isAttacking");
+
     }
 
 
@@ -28,25 +35,36 @@ public class EnemyMovement : MonoBehaviour
 
 		float currentDistance = Vector3.Distance (nav.transform.position, player.transform.position);
 
-		// If the enemy is close enough
-		if (currentDistance <= 140 / 100) {
-			animator.SetBool (movingBool, false);
-		} else if (currentDistance < minimum_distance) {
-			// ... set the destination of the nav mesh agent to the player.
-			if ((lastAttack + 3f) < Time.time) {
-				nav.SetDestination (player.position);
-				animator.SetBool (movingBool, true);
-			} else {
+		if (currentDistance < minimum_distance) {
+			if (currentDistance <= 140 / 100) {
+				// se estiver perto suficiente do jogador
+				animator.SetBool(movingBool, false);
+				animator.SetBool (attackingBool, true);
 				nav.SetDestination (nav.transform.position);
-				animator.SetBool (movingBool, false);
+				lastStopAnimation = Time.time;
 
+			} else if(currentDistance > (140/100)) {
+				//está a distância de correr atrás do jogador
+				animator.SetBool (movingBool, false);
+				nav.SetDestination (nav.transform.position);
+
+				if ((lastAttack + 2.1f) < Time.time) {
+					//já atacou e tem de voltar a seguir o jogador
+					animator.SetBool(attackingBool, false);
+					animator.SetBool (movingBool, true);
+					nav.SetDestination (player.position);
+
+				} else {
+					//tem de parar porque a animação de correr ainda está a ser executada
+					animator.SetBool(movingBool,false);
+					nav.SetDestination (nav.transform.position);
+				}
 			}
 		} else {
-			// ... disable the nav mesh agent.
-			//nav.enabled = false;
-			nav.SetDestination (nav.transform.position);
-			animator.SetBool (movingBool, false);
+			// nao está a distancia minima do jogador
+			nav.SetDestination(nav.transform.position);
 		}
+
 	}
 
 	void OnCollisionEnter (Collision col)
