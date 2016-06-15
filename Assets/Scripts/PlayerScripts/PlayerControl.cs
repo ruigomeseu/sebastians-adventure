@@ -57,6 +57,9 @@ public class PlayerControl : MonoBehaviour
 	private AudioClip walkSound;
 	private AudioClip runSound;
 
+    //rigidbody
+    private Rigidbody rigidbodyObject;
+
 	void Awake()
 	{
 		anim = GetComponent<Animator> ();
@@ -77,13 +80,15 @@ public class PlayerControl : MonoBehaviour
 		//stamina
 		staminaScript = GetComponent<Stamina>();
 
-
 		//sounds
 		audioSource = gameObject.AddComponent<AudioSource>();
 		walkSound = (AudioClip) Resources.Load("Sounds/Footsteps/walk_teste");
 		runSound = (AudioClip) Resources.Load("Sounds/Footsteps/run_teste");
 		audioSource.loop = true;
-	}
+
+        //rigidbody
+        rigidbodyObject = GetComponent<Rigidbody>();
+    }
 
 	bool IsGrounded() {
 		return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
@@ -100,7 +105,6 @@ public class PlayerControl : MonoBehaviour
 
 
 		if (Input.GetButton ("Fire1")) {
-			Debug.Log ("ATIRAR");
 			GetComponent<ThrowObjectController> ().ThrowRock ();
 		}
 
@@ -115,7 +119,7 @@ public class PlayerControl : MonoBehaviour
 
 		// Fly
 		anim.SetBool (flyBool, fly);
-		GetComponent<Rigidbody>().useGravity = !fly;
+		rigidbodyObject.useGravity = !fly;
 		anim.SetBool (groundedBool, IsGrounded ());
 
 
@@ -127,7 +131,7 @@ public class PlayerControl : MonoBehaviour
 
 	void JumpManagement()
 	{
-		if (GetComponent<Rigidbody>().velocity.y < 10) // already jumped
+		if (rigidbodyObject.velocity.y < 10) // already jumped
 		{
 			anim.SetBool (jumpBool, false);
 			if(timeToNextJump > 0)
@@ -138,7 +142,7 @@ public class PlayerControl : MonoBehaviour
 			anim.SetBool(jumpBool, true);
 			if(speed > 0 && timeToNextJump <= 0 && !aim)
 			{
-				GetComponent<Rigidbody>().velocity = new Vector3(0, jumpHeight, 0);
+				rigidbodyObject.velocity = new Vector3(0, jumpHeight, 0);
 				timeToNextJump = jumpCooldown;
 			}
 		}
@@ -217,8 +221,8 @@ public class PlayerControl : MonoBehaviour
 			if (fly)
 				targetRotation *= Quaternion.Euler (90, 0, 0);
 
-			Quaternion newRotation = Quaternion.Slerp(GetComponent<Rigidbody>().rotation, targetRotation, finalTurnSmoothing * Time.deltaTime);
-			GetComponent<Rigidbody>().MoveRotation (newRotation);
+			Quaternion newRotation = Quaternion.Slerp(rigidbodyObject.rotation, targetRotation, finalTurnSmoothing * Time.deltaTime);
+			rigidbodyObject.MoveRotation (newRotation);
 			lastDirection = targetDirection;
 		}
 		//idle - fly or grounded
@@ -237,8 +241,8 @@ public class PlayerControl : MonoBehaviour
 		{
 			repositioning.y = 0;
 			Quaternion targetRotation = Quaternion.LookRotation (repositioning, Vector3.up);
-			Quaternion newRotation = Quaternion.Slerp(GetComponent<Rigidbody>().rotation, targetRotation, turnSmoothing * Time.deltaTime);
-			GetComponent<Rigidbody>().MoveRotation (newRotation);
+			Quaternion newRotation = Quaternion.Slerp(rigidbodyObject.rotation, targetRotation, turnSmoothing * Time.deltaTime);
+			rigidbodyObject.MoveRotation (newRotation);
 		}
 	}
 
