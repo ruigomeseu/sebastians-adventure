@@ -15,5 +15,8 @@ public class ThrowObjectController : MonoBehaviour {
 
 	public void ThrowRock(){
 		GetComponent<Animator>().SetBool (Animator.StringToHash ("Throwing"), true);
+
+		Debug.Log ("ATIRAR PEDRA");
+
 	}
 }

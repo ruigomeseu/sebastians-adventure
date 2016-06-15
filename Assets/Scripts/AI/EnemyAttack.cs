@@ -43,8 +43,6 @@ public class EnemyAttack : MonoBehaviour {
 		}
 
 		//checkAttackAnimation ();
-
-		Debug.Log (animator.GetBool ("isAttacking"));
 	}
 
 	void checkAttackAnimation() {

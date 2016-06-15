@@ -4,6 +4,8 @@ using UnityStandardAssets.ImageEffects;
 
 public class PlayerSanity : MonoBehaviour {
 
+	public bool enabled = true;
+
 	private double sanity;
 	private double maxSanityLevel = 1000;
 	private double sanityCouncern=100;
@@ -51,10 +53,11 @@ public class PlayerSanity : MonoBehaviour {
 
 	void OnGUI()
 	{
-		double ratio = sanity / maxSanityLevel;
-		double rectWidth = ratio * Screen.width / 3;
-		sanityRect.width = (float)rectWidth;
-		GUI.DrawTexture(sanityRect, sanityTexture);
-
+		if (enabled) {
+			double ratio = sanity / maxSanityLevel;
+			double rectWidth = ratio * Screen.width / 3;
+			sanityRect.width = (float)rectWidth;
+			GUI.DrawTexture (sanityRect, sanityTexture);
+		}
 	}
 }

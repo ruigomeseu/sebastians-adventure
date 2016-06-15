@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Stamina : MonoBehaviour {
 
+	public bool enabled = true;
+
     Rect staminaRect;
     Texture2D staminaTexture;
     float stamina = 10f;
@@ -34,10 +36,12 @@ public class Stamina : MonoBehaviour {
 
     void OnGUI()
     {
-        float ratio = stamina / maxStamina;
-        float rectWidth = ratio * Screen.width / 3;
-        staminaRect.width = rectWidth;
-        GUI.DrawTexture(staminaRect, staminaTexture);
+		if (enabled) {
+			float ratio = stamina / maxStamina;
+			float rectWidth = ratio * Screen.width / 3;
+			staminaRect.width = rectWidth;
+			GUI.DrawTexture (staminaRect, staminaTexture);
+		}
 
     }
 

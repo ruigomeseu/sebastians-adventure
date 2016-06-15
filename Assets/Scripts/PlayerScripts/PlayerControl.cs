@@ -100,6 +100,7 @@ public class PlayerControl : MonoBehaviour
 
 
 		if (Input.GetButton ("Fire1")) {
+			Debug.Log ("ATIRAR");
 			GetComponent<ThrowObjectController> ().ThrowRock ();
 		}
 
