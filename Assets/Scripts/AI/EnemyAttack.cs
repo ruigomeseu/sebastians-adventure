@@ -14,10 +14,14 @@ public class EnemyAttack : MonoBehaviour {
 	public int movingBool;
 	Animator animator;
 
+    //player sanity script
+    private PlayerSanity playerSanityScript;
+
 	// Use this for initialization
 	void Start () {
 		playerChar = GameObject.FindGameObjectWithTag("Player");
-		nav = GetComponent<NavMeshAgent>();
+        playerSanityScript = playerChar.GetComponent<PlayerSanity>();
+        nav = GetComponent<NavMeshAgent>();
 		animator = GetComponent<Animator> ();
 		attackingBool = Animator.StringToHash ("isAttacking");
 		movingBool = Animator.StringToHash ("isMoving");
@@ -31,10 +35,10 @@ public class EnemyAttack : MonoBehaviour {
 	void Update () {
 
 		//if the enemy is close enough to be attacked
-		if (Vector3.Distance (nav.transform.position, playerChar.transform.transform.position) < minimum_attack_distance) 
+		if (Vector3.Distance (nav.transform.position, playerChar.transform.transform.position) < minimum_attack_distance)
 		{
 			if ((lastAttack + timeBetweenAttacks) < Time.time) {
-				playerChar.GetComponent<PlayerSanity> ().decreaseSanity (damage);
+				playerSanityScript.decreaseSanity (damage);
 				lastAttack = Time.time;
 				animator.SetBool (movingBool, false);
 				animator.SetBool (attackingBool, true);

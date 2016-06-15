@@ -19,6 +19,7 @@ public class MenuScript : MonoBehaviour {
 		Time.timeScale = 1;
 		this.canvas.enabled = false;
 		this.gamePaused = false;
+		Screen.lockCursor = true;
 	}
 
 	public void QuitGame() {
@@ -33,6 +34,7 @@ public class MenuScript : MonoBehaviour {
 				this.canvas.enabled = true;
 				this.gamePaused = true;
 				Time.timeScale = 0;
+				Screen.lockCursor = false;
 			}
 
 		}
