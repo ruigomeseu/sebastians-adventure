@@ -69,9 +69,9 @@ public class EnemyMovement : MonoBehaviour
 
 	void OnCollisionEnter (Collision col)
 	{
-		if(col.gameObject.name == "rock")
+		if(col.gameObject.tag == "ThrowingRock")
 		{
-			Destroy(this);
+			Destroy(gameObject);
 		}
 	}
 

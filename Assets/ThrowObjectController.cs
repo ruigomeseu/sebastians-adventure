@@ -8,6 +8,8 @@ public class ThrowObjectController : MonoBehaviour {
 	private Rigidbody rockRigidBody;
 	public GameObject parentBone;
 
+	public float speedForce = 1000;
+
 	// Use this for initialization
 	void Start () {
 
@@ -40,9 +42,8 @@ public class ThrowObjectController : MonoBehaviour {
 		this.rockClone.transform.parent = null;
 		rockRigidBody.useGravity = true;
 		this.rockClone.transform.rotation = parentBone.transform.rotation;
-		rockRigidBody.AddForce (transform.forward * 1000);
+		rockRigidBody.AddForce (transform.forward * this.speedForce);
 
 		this.rockClone = null;
-		Destroy (this.rockClone);
 	}
 }
