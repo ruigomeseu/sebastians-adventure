@@ -32,6 +32,7 @@ public class PlayerControl : MonoBehaviour
 	private int groundedBool;
 	private Transform cameraTransform;
 	public int pickingBool;
+	public int pushingBool;
 
 	private float h;
 	private float v;
@@ -39,7 +40,7 @@ public class PlayerControl : MonoBehaviour
 	private bool aim;
 
 	private bool run;
-	private bool sprint;
+	public bool sprint;
 
 	private bool isMoving;
 
@@ -48,7 +49,7 @@ public class PlayerControl : MonoBehaviour
 	private float distToGround;
 	private float sprintFactor;
 
-
+	public Vector3 currentDirection;
 
 	private Stamina staminaScript;
 
@@ -74,6 +75,11 @@ public class PlayerControl : MonoBehaviour
 		// fly
 		flyBool = Animator.StringToHash ("Fly");
 		groundedBool = Animator.StringToHash("Grounded");
+
+
+		pushingBool = Animator.StringToHash("Pushing");
+
+
 		distToGround = GetComponent<Collider>().bounds.extents.y;
 		sprintFactor = sprintSpeed / runSpeed;
 
@@ -88,10 +94,22 @@ public class PlayerControl : MonoBehaviour
 
         //rigidbody
         rigidbodyObject = GetComponent<Rigidbody>();
+
     }
 
 	bool IsGrounded() {
 		return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
+	}
+
+	bool AnimatorIsPlaying(){
+		Debug.Log (anim.GetCurrentAnimatorStateInfo (0).normalizedTime);
+		return			anim.GetCurrentAnimatorStateInfo(0).normalizedTime < 0.9;
+	}
+
+
+	void OnCollisionExit(Collision collisionInfo) {
+		if(collisionInfo.collider.tag == "PushRock")
+			anim.SetBool (pushingBool, false);
 	}
 
 	void Update()
@@ -170,15 +188,12 @@ public class PlayerControl : MonoBehaviour
 				speed = walkSpeed;
 			}
 
-			Debug.Log ("Walk Speed: " + walkSpeed);
-			Debug.Log ("Sprint Speed: " + sprintSpeed);
-			Debug.Log ("Speed: " + speed);
 			staminaScript.changeStamina(speed / 200f);
 
 			anim.SetFloat(speedFloat, speed, speedDampTime, Time.deltaTime);
-			Vector3 direction = Rotating (horizontal, vertical) * speed;
-			direction.y = GetComponent<Rigidbody> ().velocity.y;
-			GetComponent<Rigidbody> ().velocity =  direction ;
+			currentDirection = Rotating (horizontal, vertical) * speed;
+			currentDirection.y = GetComponent<Rigidbody> ().velocity.y;
+			GetComponent<Rigidbody> ().velocity =  currentDirection ;
 		}
 		else
 		{
@@ -258,6 +273,6 @@ public class PlayerControl : MonoBehaviour
 
 	public bool isSprinting()
 	{
-		return sprint && !aim && (isMoving);
+		return sprint && (isMoving);
 	}
 }
