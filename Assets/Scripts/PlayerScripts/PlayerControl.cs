@@ -175,7 +175,7 @@ public class PlayerControl : MonoBehaviour
 
 	void MovementManagement(float horizontal, float vertical, bool running, bool sprinting)
 	{
-
+		float staminaRate = 0;
 		if(isMoving && !anim.GetBool(throwingBool))
 		{
 			if(sprinting && staminaScript.getCurrentStamina() > 0)
@@ -185,8 +185,7 @@ public class PlayerControl : MonoBehaviour
 					audioSource.Play ();
 				}
 				speed = sprintSpeed;
-
-                staminaScript.changeStamina(speed / 200f);
+				staminaRate = speed / 200f;
             }
 			else
 			{
@@ -195,6 +194,7 @@ public class PlayerControl : MonoBehaviour
 					audioSource.Play ();
 				}
 				speed = walkSpeed;
+				staminaRate = -0.005f;
 			}
 
 			anim.SetFloat(speedFloat, speed, speedDampTime, Time.deltaTime);
@@ -208,8 +208,11 @@ public class PlayerControl : MonoBehaviour
 			audioSource.Stop ();
 			speed = 0f;
 			anim.SetFloat(speedFloat, 0f);
-			staminaScript.changeStamina(-0.005f);
+
+			staminaRate = -0.005f;
 		}
+
+		staminaScript.changeStamina(staminaRate);
 	}
 
 	Vector3 Rotating (float horizontal, float vertical)
