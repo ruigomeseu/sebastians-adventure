@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class CharacterInventory : MonoBehaviour {
-    
+	public ArrayList inventoryObjectsNames;
 	public ArrayList inventoryObjects;
 
 	public ArrayList inventory;
@@ -34,6 +34,7 @@ public class CharacterInventory : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		inventoryObjectsNames = new ArrayList ();
 		inventoryObjectsPickable = new ArrayList ();
 		inventory = new ArrayList ();
 		inventoryTextureArray = new ArrayList ();
@@ -51,7 +52,7 @@ public class CharacterInventory : MonoBehaviour {
 		for( ; i < inventoryObjects.Count; i++)
 		{
 			float offset = 2;
-			Rect boxInv = new Rect (inventoryX + ((inventoryWidth/9)+offset)*col + offset, 
+			Rect boxInv = new Rect (inventoryX + ((inventoryWidth/9)+offset)*col + offset,
 				inventoryY,
 				inventoryWidth/9,
 				inventoryHeight);
@@ -89,8 +90,8 @@ public class CharacterInventory : MonoBehaviour {
 				createInventoryPanel ();
 			}
 		}
-			
-			
+
+
 		//pick object
 		if(Input.GetKeyUp (KeyCode.E)) {
 
@@ -107,7 +108,7 @@ public class CharacterInventory : MonoBehaviour {
 
 
 				if (distance < 2) {
-					
+
 					GetComponent<PlayerControl>().anim.SetBool (GetComponent<PlayerControl>().pickingBool, true);
 
 					//play sound
@@ -118,14 +119,15 @@ public class CharacterInventory : MonoBehaviour {
 					PickableObjectBehaviour temp = go.GetComponent<PickableObjectBehaviour>();
 					inventoryObjectsPickable.Add (temp);
 					inventoryObjects.Add (temp.objTexture);
-		
+					inventoryObjectsNames.Add (go.name);
+
 					picked = false; // sets object to appear
-				
+
 					Destroy (go);
 				}
 			}
 		}
-			
+
 
 		//select object from inventory
 		if (Input.GetKeyUp (KeyCode.Alpha1)) {

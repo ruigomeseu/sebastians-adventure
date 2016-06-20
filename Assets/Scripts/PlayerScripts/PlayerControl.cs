@@ -58,9 +58,10 @@ public class PlayerControl : MonoBehaviour
 	private AudioSource audioSource;
 	private AudioClip walkSound;
 	private AudioClip runSound;
+	//rigidbody
+  private Rigidbody rigidbodyObject;
 
-    //rigidbody
-    private Rigidbody rigidbodyObject;
+	public bool IsMovementActivated = true;
 
 	void Awake()
 	{
@@ -115,15 +116,19 @@ public class PlayerControl : MonoBehaviour
 	void Update()
 	{
 		// fly
-		h = Input.GetAxis("Horizontal");
-		v = Input.GetAxis("Vertical");
-		run = Input.GetButton ("Run");
-		sprint = Input.GetButton ("Sprint");
-		isMoving = Mathf.Abs(h) > 0.1 || Mathf.Abs(v) > 0.1;
+		if (IsMovementActivated) {
+			h = Input.GetAxis("Horizontal");
+			v = Input.GetAxis("Vertical");
+			run = Input.GetButton ("Run");
+			sprint = Input.GetButton ("Sprint");
+			isMoving = Mathf.Abs(h) > 0.1 || Mathf.Abs(v) > 0.1;
 
 
-		if (Input.GetButton ("Fire1")) {
-			GetComponent<ThrowObjectController> ().ThrowRock ();
+			if (Input.GetButton ("Fire1")) {
+				GetComponent<ThrowObjectController> ().ThrowRock ();
+			}
+		} else {
+			isMoving = false;
 		}
 
 
@@ -140,7 +145,9 @@ public class PlayerControl : MonoBehaviour
 		rigidbodyObject.useGravity = !fly;
 		anim.SetBool (groundedBool, IsGrounded ());
 
-
+		if (!IsMovementActivated) {
+			h = 0; v = 0; run = false; sprint = false;
+		}
 		MovementManagement (h, v, run, sprint);
 		JumpManagement ();
 
@@ -168,7 +175,7 @@ public class PlayerControl : MonoBehaviour
 
 	void MovementManagement(float horizontal, float vertical, bool running, bool sprinting)
 	{
-		
+
 		if(isMoving && !anim.GetBool(throwingBool))
 		{
 			if(sprinting && staminaScript.getCurrentStamina() > 0)
@@ -189,7 +196,7 @@ public class PlayerControl : MonoBehaviour
 				}
 				speed = walkSpeed;
 			}
-            
+
 			anim.SetFloat(speedFloat, speed, speedDampTime, Time.deltaTime);
 			currentDirection = Rotating (horizontal, vertical) * speed;
 			currentDirection.y = GetComponent<Rigidbody> ().velocity.y;
@@ -247,7 +254,7 @@ public class PlayerControl : MonoBehaviour
 		}
 
 		return targetDirection;
-	}	
+	}
 
 	private void Repositioning()
 	{
