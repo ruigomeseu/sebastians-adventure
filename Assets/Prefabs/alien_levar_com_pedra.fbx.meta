@@ -1,0 +1,268 @@
+fileFormatVersion: 2
+guid: ac25cd91359664dd8b3467b8e7a0a68b
+timeCreated: 1466414549
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Armature
+    100004: Camera
+    100006: chest
+    100008: circulo que faz boca 2
+    100010: foor roll.L
+    100012: foor roll.R
+    100014: foot.L
+    100016: foot.R
+    100018: Hair
+    100020: Hair_end
+    100022: hand.L
+    100024: hand.L_end
+    100026: hand.R
+    100028: hand.R_end
+    100030: head
+    100032: larm.L
+    100034: larm.R
+    100036: leg control.L
+    100038: leg control.R
+    100040: leg ik.L
+    100042: leg ik.L_end
+    100044: leg ik.R
+    100046: leg ik.R_end
+    100048: leg pole target.L
+    100050: leg pole target.L_end
+    100052: leg pole target.R
+    100054: leg pole target.R_end
+    100056: lowerleg.L
+    100058: lowerleg.L_end
+    100060: lowerleg.R
+    100062: lowerleg.R_end
+    100064: monstro_1
+    100066: monstro_1_olho_1
+    100068: monstro_1_olho_1.001
+    100070: monstro_1_riscas
+    100072: monstro_1_sobrancelhas
+    100074: montro_1_boca
+    100076: root
+    100078: Sun
+    100080: Sun.001
+    100082: Sun.002
+    100084: Sun.003
+    100086: Sun.004
+    100088: Sun.005
+    100090: toes control.L
+    100092: toes control.L_end
+    100094: toes control.R
+    100096: toes control.R_end
+    100098: toes.L
+    100100: toes.L_end
+    100102: toes.R
+    100104: toes.R_end
+    100106: torso
+    100108: uparm.L
+    100110: uparm.R
+    100112: upper leg.L
+    100114: upper leg.R
+    400000: //RootNode
+    400002: Armature
+    400004: Camera
+    400006: chest
+    400008: circulo que faz boca 2
+    400010: foor roll.L
+    400012: foor roll.R
+    400014: foot.L
+    400016: foot.R
+    400018: Hair
+    400020: Hair_end
+    400022: hand.L
+    400024: hand.L_end
+    400026: hand.R
+    400028: hand.R_end
+    400030: head
+    400032: larm.L
+    400034: larm.R
+    400036: leg control.L
+    400038: leg control.R
+    400040: leg ik.L
+    400042: leg ik.L_end
+    400044: leg ik.R
+    400046: leg ik.R_end
+    400048: leg pole target.L
+    400050: leg pole target.L_end
+    400052: leg pole target.R
+    400054: leg pole target.R_end
+    400056: lowerleg.L
+    400058: lowerleg.L_end
+    400060: lowerleg.R
+    400062: lowerleg.R_end
+    400064: monstro_1
+    400066: monstro_1_olho_1
+    400068: monstro_1_olho_1.001
+    400070: monstro_1_riscas
+    400072: monstro_1_sobrancelhas
+    400074: montro_1_boca
+    400076: root
+    400078: Sun
+    400080: Sun.001
+    400082: Sun.002
+    400084: Sun.003
+    400086: Sun.004
+    400088: Sun.005
+    400090: toes control.L
+    400092: toes control.L_end
+    400094: toes control.R
+    400096: toes control.R_end
+    400098: toes.L
+    400100: toes.L_end
+    400102: toes.R
+    400104: toes.R_end
+    400106: torso
+    400108: uparm.L
+    400110: uparm.R
+    400112: upper leg.L
+    400114: upper leg.R
+    2300000: circulo que faz boca 2
+    2300002: monstro_1_olho_1
+    2300004: monstro_1_olho_1.001
+    2300006: monstro_1_riscas
+    2300008: montro_1_boca
+    3300000: circulo que faz boca 2
+    3300002: monstro_1_olho_1
+    3300004: monstro_1_olho_1.001
+    3300006: monstro_1_riscas
+    3300008: montro_1_boca
+    4300000: circulo que faz boca 2
+    4300002: monstro_1_olho_1.001
+    4300004: monstro_1_riscas
+    4300006: montro_1_boca
+    4300008: monstro_1_sobrancelhas
+    4300010: monstro_1_olho_1
+    4300012: monstro_1
+    7400000: Sun.005|ArmatureAction
+    7400002: Sun.005|monstro_1_olho_1.001Action
+    7400004: Sun.005|monstro_1_olho_1Action
+    7400006: Sun.005|walkcycle
+    7400008: Sun.004|ArmatureAction
+    7400010: Sun.004|monstro_1_olho_1.001Action
+    7400012: Sun.004|monstro_1_olho_1Action
+    7400014: Sun.004|walkcycle
+    7400016: Sun.003|ArmatureAction
+    7400018: Sun.003|monstro_1_olho_1.001Action
+    7400020: Sun.003|monstro_1_olho_1Action
+    7400022: Sun.003|walkcycle
+    7400024: Sun.002|ArmatureAction
+    7400026: Sun.002|monstro_1_olho_1.001Action
+    7400028: Sun.002|monstro_1_olho_1Action
+    7400030: Sun.002|walkcycle
+    7400032: Sun.001|ArmatureAction
+    7400034: Sun.001|monstro_1_olho_1.001Action
+    7400036: Sun.001|monstro_1_olho_1Action
+    7400038: Sun.001|walkcycle
+    7400040: circulo que faz boca 2|ArmatureAction
+    7400042: circulo que faz boca 2|monstro_1_olho_1.001Action
+    7400044: circulo que faz boca 2|monstro_1_olho_1Action
+    7400046: circulo que faz boca 2|walkcycle
+    7400048: Sun|ArmatureAction
+    7400050: Sun|monstro_1_olho_1.001Action
+    7400052: Sun|monstro_1_olho_1Action
+    7400054: Sun|walkcycle
+    7400056: Camera|ArmatureAction
+    7400058: Camera|monstro_1_olho_1.001Action
+    7400060: Camera|monstro_1_olho_1Action
+    7400062: Camera|walkcycle
+    7400064: Armature|ArmatureAction
+    7400066: Armature|ArmatureAction.001
+    7400068: Armature|monstro_1_olho_1.001Action
+    7400070: Armature|monstro_1_olho_1Action
+    7400072: Armature|walkcycle
+    7400074: monstro_1_olho_1.001|ArmatureAction
+    7400076: monstro_1_olho_1.001|monstro_1_olho_1.001Action
+    7400078: monstro_1_olho_1.001|monstro_1_olho_1Action
+    7400080: monstro_1_olho_1.001|walkcycle
+    7400082: monstro_1_riscas|ArmatureAction
+    7400084: monstro_1_riscas|monstro_1_olho_1.001Action
+    7400086: monstro_1_riscas|monstro_1_olho_1Action
+    7400088: monstro_1_riscas|walkcycle
+    7400090: montro_1_boca|ArmatureAction
+    7400092: montro_1_boca|monstro_1_olho_1.001Action
+    7400094: montro_1_boca|monstro_1_olho_1Action
+    7400096: montro_1_boca|walkcycle
+    7400098: monstro_1_sobrancelhas|ArmatureAction
+    7400100: monstro_1_sobrancelhas|monstro_1_olho_1.001Action
+    7400102: monstro_1_sobrancelhas|monstro_1_olho_1Action
+    7400104: monstro_1_sobrancelhas|walkcycle
+    7400106: monstro_1_olho_1|ArmatureAction
+    7400108: monstro_1_olho_1|monstro_1_olho_1.001Action
+    7400110: monstro_1_olho_1|monstro_1_olho_1Action
+    7400112: monstro_1_olho_1|walkcycle
+    7400114: monstro_1|ArmatureAction
+    7400116: monstro_1|monstro_1_olho_1.001Action
+    7400118: monstro_1|monstro_1_olho_1Action
+    7400120: monstro_1|walkcycle
+    9500000: //RootNode
+    13700000: monstro_1
+    13700002: monstro_1_sobrancelhas
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

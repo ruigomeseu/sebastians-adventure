@@ -11,10 +11,9 @@ public class EnemyMovement : MonoBehaviour
 
 	private int movingBool;
 	private int attackingBool;
-    private int throwingBool;
+	private int deadBool;
+	private double dead=0f;
 	private Animator animator;
- 
-
 	private float lastStopAnimation;
 
 
@@ -27,6 +26,7 @@ public class EnemyMovement : MonoBehaviour
 		animator = GetComponent<Animator> ();
 		movingBool = Animator.StringToHash ("isMoving");
 		attackingBool = Animator.StringToHash ("isAttacking");
+		deadBool = Animator.StringToHash ("isDead");
 
     }
 
@@ -67,14 +67,20 @@ public class EnemyMovement : MonoBehaviour
 			nav.SetDestination(nav.transform.position);
 		}
 
+		if (dead != 0 && dead + 2f < Time.time) {
+			gameObject.SetActive (false);
+		}
+
 	}
 
 	void OnCollisionEnter (Collision col)
 	{
 		if(col.gameObject.tag == "ThrowingRock")
 		{
-			Destroy(gameObject);
+			animator.SetBool (deadBool, true);
+			Debug.Log ("entrou na colisao da pedra");
+			dead = Time.time;
 		}
 	}
 
-} 
+}
