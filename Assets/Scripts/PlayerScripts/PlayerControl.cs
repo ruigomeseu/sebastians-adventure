@@ -57,9 +57,9 @@ public class PlayerControl : MonoBehaviour
 	//sounds
 	private AudioSource audioSource;
 	private AudioClip walkSound;
-	private AudioClip runSound;
+
 	//rigidbody
-  private Rigidbody rigidbodyObject;
+  	private Rigidbody rigidbodyObject;
 
 	public bool IsMovementActivated = true;
 
@@ -89,14 +89,17 @@ public class PlayerControl : MonoBehaviour
 
 		//sounds
 		audioSource = gameObject.AddComponent<AudioSource>();
-		walkSound = (AudioClip) Resources.Load("Sounds/Footsteps/walk_teste");
-		runSound = (AudioClip) Resources.Load("Sounds/Footsteps/run_teste");
-		audioSource.loop = true;
+		walkSound = (AudioClip)Resources.Load ("Sounds/Footsteps/grass_footstep");
+		audioSource.clip = walkSound;
 
         //rigidbody
         rigidbodyObject = GetComponent<Rigidbody>();
 
     }
+
+	public void PlayWalkingSound(){
+		audioSource.Play ();
+	}
 
 	bool IsGrounded() {
 		return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
@@ -180,19 +183,11 @@ public class PlayerControl : MonoBehaviour
 		{
 			if(sprinting && staminaScript.getCurrentStamina() > 0)
 			{
-				audioSource.clip = runSound;
-				if (!audioSource.isPlaying) {
-					audioSource.Play ();
-				}
 				speed = sprintSpeed;
 				staminaRate = speed / 200f;
             }
 			else
 			{
-				audioSource.clip = walkSound;
-				if (!audioSource.isPlaying) {
-					audioSource.Play ();
-				}
 				speed = walkSpeed;
 				staminaRate = -0.005f;
 			}

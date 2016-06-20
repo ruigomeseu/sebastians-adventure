@@ -118,7 +118,7 @@ ModelImporter:
     400108: upper leg.L
     400110: upper leg.R
     4300000: Sebastian
-    7400000: Armature|ArmatureAction.002
+    7400000: Armature|ArmatureAction.002Run
     9500000: //RootNode
     13700000: Sebastian
   materials:
@@ -143,7 +143,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|ArmatureAction.002
+      name: Armature|ArmatureAction.002Run
       takeName: Armature|ArmatureAction.002
       firstFrame: 0
       lastFrame: 28
