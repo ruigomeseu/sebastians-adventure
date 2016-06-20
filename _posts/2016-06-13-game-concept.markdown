@@ -5,7 +5,7 @@ date:   2016-06-13 12:00:00
 categories: main
 ---
 
-Sebatian's Adventure is a walking simulator. You wake up in an island near an helicopter wreckage, without any memories as to what happened.
+Sebastian's Adventure is a walking simulator. You wake up in an island near an helicopter wreckage, without any memories as to what happened.
 
 In a desperate attempt to understand what happened, you're forced to explore your surroundings, finding clues and items that will help you find your way out of the island.
 

@@ -11,33 +11,32 @@ title: "Home"
 
   <div class="flex-container download">
     <div>
-      <iframe src="https://ghbtns.com/github-btn.html?user=ruigomeseu&repo=sebastians-adventure&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+      <span class="github-btn github-stargazers github-btn-large" id="github-btn">
+        <a class="gh-btn" id="gh-btn" href="https://github.com/ruigomeseu/sebastians-adventure/" target="_blank" aria-label="Star on GitHub">
+          <span class="gh-ico" aria-hidden="true"></span>
+          <span class="gh-text" id="gh-text">Source</span>
+        </a>
+      </span>
     </div>
     <div>
-      <a class="github-button" href="https://github.com/ruigomeseu/sebastians-adventure/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download ruigomeseu/sebastians-adventure on GitHub">Download</a>
+      <span class="github-btn github-stargazers github-btn-large" id="github-btn">
+        <a class="gh-btn" id="gh-btn" href="https://github.com/ruigomeseu/sebastians-adventure/" target="_blank" aria-label="Star on GitHub">
+          <span class="gh-ico" aria-hidden="true"></span>
+          <span class="gh-text" id="gh-text">Game</span>
+        </a>
+      </span>
+    </div>
+    <div style="margin-top: 7px;">
+      <iframe src="https://ghbtns.com/github-btn.html?user=ruigomeseu&repo=sebastians-adventure&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
     </div>
   </div>
 
   <div class="flex-container menu">
+  {% for post in site.posts %}
     <div class="menu-item">
-      <a href="{{site.baseurl}}{% post_url 2016-06-13-user-interface %}">
-        User Interface
-      </a>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </div>
-    <div class="menu-item">
-      <a href="{{site.baseurl}}{% post_url 2016-06-13-game-concept %}">
-        Game Concept
-      </a>
-    </div>
-    <div class="menu-item">
-      <a href="{{site.baseurl}}{% post_url 2016-06-13-technology %}">
-        Technology
-      </a>
-    </div>
-    <div class="menu-item">
-      <a href="{{site.baseurl}}{% post_url 2016-06-13-team %}">
-        Team
-      </a>
-    </div>
+    {% endfor %}
   </div>
+
 </div>
