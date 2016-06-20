@@ -38,7 +38,8 @@ public class PlayerSanity : MonoBehaviour {
 		if (Time.time > (minTimeBetweenRecoveries + lastAttackReceived)) {
 			lastAttackReceived = Time.time;
 			sanity = System.Math.Min (sanity+recoveryRate, maxSanityLevel);
-		}
+            sanity = System.Math.Max(0, sanity);
+        }
 
 	}
 

@@ -33,6 +33,7 @@ public class PlayerControl : MonoBehaviour
 	private Transform cameraTransform;
 	public int pickingBool;
 	public int pushingBool;
+    public int throwingBool;
 
 	private float h;
 	private float v;
@@ -76,9 +77,8 @@ public class PlayerControl : MonoBehaviour
 		flyBool = Animator.StringToHash ("Fly");
 		groundedBool = Animator.StringToHash("Grounded");
 
-
 		pushingBool = Animator.StringToHash("Pushing");
-
+        throwingBool = Animator.StringToHash("Throwing");
 
 		distToGround = GetComponent<Collider>().bounds.extents.y;
 		sprintFactor = sprintSpeed / runSpeed;
@@ -169,16 +169,18 @@ public class PlayerControl : MonoBehaviour
 	void MovementManagement(float horizontal, float vertical, bool running, bool sprinting)
 	{
 		
-		if(isMoving)
+		if(isMoving && !anim.GetBool(throwingBool))
 		{
-			if(sprinting)
+			if(sprinting && staminaScript.getCurrentStamina() > 0)
 			{
 				audioSource.clip = runSound;
 				if (!audioSource.isPlaying) {
 					audioSource.Play ();
 				}
 				speed = sprintSpeed;
-			}
+
+                staminaScript.changeStamina(speed / 200f);
+            }
 			else
 			{
 				audioSource.clip = walkSound;
@@ -187,9 +189,7 @@ public class PlayerControl : MonoBehaviour
 				}
 				speed = walkSpeed;
 			}
-
-			staminaScript.changeStamina(speed / 200f);
-
+            
 			anim.SetFloat(speedFloat, speed, speedDampTime, Time.deltaTime);
 			currentDirection = Rotating (horizontal, vertical) * speed;
 			currentDirection.y = GetComponent<Rigidbody> ().velocity.y;
@@ -201,7 +201,7 @@ public class PlayerControl : MonoBehaviour
 			audioSource.Stop ();
 			speed = 0f;
 			anim.SetFloat(speedFloat, 0f);
-			staminaScript.changeStamina(-0.5f);
+			staminaScript.changeStamina(-0.005f);
 		}
 	}
 

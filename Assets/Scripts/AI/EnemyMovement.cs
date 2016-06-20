@@ -7,11 +7,13 @@ public class EnemyMovement : MonoBehaviour
     //PlayerHealth playerHealth;        // Reference to the player's health.
     //EnemyHealth enemyHealth;          // Reference to this enemy's health.
     NavMeshAgent nav;                 // Reference to the nav mesh agent.
-    public float minimum_distance = 50f;
+    public float minimum_distance = 10f;
 
 	private int movingBool;
 	private int attackingBool;
+    private int throwingBool;
 	private Animator animator;
+ 
 
 	private float lastStopAnimation;
 

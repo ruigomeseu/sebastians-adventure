@@ -20,9 +20,8 @@ public class ThrowObjectController : MonoBehaviour {
 	
 	}
 	public void ThrowRock(){
-		GetComponent<Animator>().SetBool (Animator.StringToHash ("Throwing"), true);
 
-		Debug.Log ("ATIRAR PEDRA");
+		GetComponent<Animator>().SetBool (Animator.StringToHash ("Throwing"), true);
 
 	}
 
@@ -46,4 +45,9 @@ public class ThrowObjectController : MonoBehaviour {
 
 		this.rockClone = null;
 	}
+
+    public void StopThrowing()
+    {
+        GetComponent<Animator>().SetBool(Animator.StringToHash("Throwing"), false);
+    }
 }

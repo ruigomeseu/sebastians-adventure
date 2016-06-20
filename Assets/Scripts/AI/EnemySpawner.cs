@@ -19,7 +19,6 @@ public class EnemySpawner : MonoBehaviour {
 		enemies = new ArrayList ();
 		lastSpawnTime = Time.time - 1000;
 		minimumSpawnTime = 10f;
-
 	}
 
 	// Update is called once per frame
