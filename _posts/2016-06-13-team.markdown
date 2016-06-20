@@ -27,6 +27,7 @@ Responsible for the conception of all art and design assets used in the game.
 ### Multimedia
 
 - Hugo Edgar Mesquita
+- João Ferreira
 - Matheus Scarlatti Belucio
 
 Responsible for the sound design, footsteps, voices and ambient sound.

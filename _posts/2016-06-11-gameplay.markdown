@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Gameplay"
+date:   2016-06-11 12:00:00
+categories: main
+---
+
+<div style="color:red;">Spoiler Alert</div>
+
+The early prototype consists solely in one single level.
+
+Right after the moment that the player starts the game he encounters the main character, Sebastian, in an island.
+
+The player rapidly realizes that he isn't alone in the island as aliens try to take his life.
+
+In order to survive, Sebastian tries to reach for help among the local population of the island using a map that was near his wreckage.
+
+This is the first big turn-around in the history that is presented to the player. The information that the pilot that he came with is alive changes everything becoming the main objective for the rest of the prototype, finding the pilot.
+
+In a rush against time, Sebastian has to find where the pilot is hiding while he’s waiting for him. He has the master plan that will take them out of the island.
+
+This prototype ends when Sebastian reaches the pilot that has been hiding in a cave.
