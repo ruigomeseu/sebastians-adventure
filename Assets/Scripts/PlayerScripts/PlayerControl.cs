@@ -54,10 +54,6 @@ public class PlayerControl : MonoBehaviour
 
 	private Stamina staminaScript;
 
-	//sounds
-	private AudioSource audioSource;
-	private AudioClip walkSound;
-
 	//rigidbody
   	private Rigidbody rigidbodyObject;
 
@@ -87,19 +83,11 @@ public class PlayerControl : MonoBehaviour
 		//stamina
 		staminaScript = GetComponent<Stamina>();
 
-		//sounds
-		audioSource = gameObject.AddComponent<AudioSource>();
-		walkSound = (AudioClip)Resources.Load ("Sounds/Footsteps/grass_footstep");
-		audioSource.clip = walkSound;
 
         //rigidbody
         rigidbodyObject = GetComponent<Rigidbody>();
 
     }
-
-	public void PlayWalkingSound(){
-		audioSource.Play ();
-	}
 
 	bool IsGrounded() {
 		return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
@@ -200,7 +188,7 @@ public class PlayerControl : MonoBehaviour
 		else
 		{
 			GetComponent<Rigidbody> ().velocity = new Vector3(-0, GetComponent<Rigidbody> ().velocity.y, 0);
-			audioSource.Stop ();
+			GetComponent<SoundsController> ().StopWalkingSound ();
 			speed = 0f;
 			anim.SetFloat(speedFloat, 0f);
 

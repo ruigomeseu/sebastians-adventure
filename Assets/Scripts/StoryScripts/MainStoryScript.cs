@@ -49,13 +49,24 @@ public class MainStoryScript : MonoBehaviour {
 	}
 
 	void TalkNPC(){
+		/*
 		this.GetComponent<PlayerControl> ().IsMovementActivated = false;	
 
 		audioClip = (AudioClip) Resources.Load("Sounds/pickItem_teste");
 		audioSource.clip = audioClip;
 		audioSource.Play ();
 		this.GetComponent<PlayerControl> ().IsMovementActivated = true;
-		Invoke ("ShowObjective", audioClip.length);
+		Invoke ("ShowObjective", audioClip.length);*/
+
+		List<AudioClip> audioList = new List<AudioClip> ();
+
+		audioList.Add((AudioClip) Resources.Load("Sounds/Dialogs/Player/dialoguePlayer_1"));
+		audioList.Add((AudioClip) Resources.Load("Sounds/Dialogs/NPC/dialogueNpc_1"));
+		audioList.Add((AudioClip) Resources.Load("Sounds/Dialogs/Player/dialoguePlayer_2"));
+		audioList.Add((AudioClip) Resources.Load("Sounds/Dialogs/NPC/dialogueNpc_2"));
+		audioList.Add((AudioClip) Resources.Load("Sounds/Dialogs/Player/dialoguePlayer_3"));
+
+		this.GetComponent<DialogScript> ().StartDialog (audioList);
 	}
 
 	void Update () {
