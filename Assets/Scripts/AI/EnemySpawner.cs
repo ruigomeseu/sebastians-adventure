@@ -6,13 +6,13 @@ public class EnemySpawner : MonoBehaviour {
 	//enemies array list
 	private ArrayList enemies;
 
-	private int maxEnemies = 50;
+	public int maxEnemies = 50;
 	public GameObject prefab;
 
 	//scripts 
 	public double currentTimeOfTheDay;
-	private float lastSpawnTime;
-	private float minimumSpawnTime;
+	public float lastSpawnTime;
+	public float minimumSpawnTime;
 
 	// Use this for initialization
 	void Start () {
