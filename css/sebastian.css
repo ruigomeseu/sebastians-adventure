@@ -1,0 +1,123 @@
+html {
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: rgba(0,0,0,0.87);
+  background: url("http://1.bp.blogspot.com/-IWRZ0hyK9T8/UEixdFa9KyI/AAAAAAAAE8g/5wLXpUbpYZk/s1920/desert-island-1080.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.youtube-player {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 64em) {
+  .main-content {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+.page-header {
+  height: 200px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-name img {
+  width: 300px;
+}
+
+.flex-container {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  -webkit-flex-wrap: wrap; /* Safari */
+  flex-wrap:         wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+.menu {
+    margin-top: 40px;
+}
+
+.menu-item {
+  padding: 20px;
+  margin: 0px 6px 8px 6px;
+  text-align: center;
+  width: 260px;
+  height: 200px;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  background-color: rgba(84, 110, 122, 0.6);
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+.post-page {
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  background-color: rgba(84, 110, 122, 0.8);
+  color: #FFFFFF;
+}
+
+.post-page blockquote {
+  color: #FFFFFF;
+}
+
+.post-page a {
+  color: #FFFFFF;
+}
+
+.post-page h1,
+.post-page h2,
+.post-page h3,
+.post-page h4{
+  color: #FFFFFF;
+}
+
+.main-content h1 {
+  margin-top: 0;
+}
+
+.footer {
+  width: 60%;
+  text-align: center;
+}
+
+.site-footer {
+    border-top: solid 0px #2C3539;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.site-footer-credits {
+  color: #2C3539;
+}
+
+.site-footer-credits a {
+  color: #2C3539;
+  text-decoration: underline;
+}

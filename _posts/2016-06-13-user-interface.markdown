@@ -15,7 +15,7 @@ Sebastian's Adventure is a 3rd Person game, using the WASD key combination for m
 | A     | Strafe Left    |
 | S     | Move Backwards |
 | D     | Strafe Right   |
-| I     | Jump           |
+| I     | Inventory      |
 | E     | Action         |
 | Space | Jump           |
 | Shift | Sprint         |

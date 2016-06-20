@@ -5,20 +5,39 @@ title: "Home"
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="youtube-player">
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/pnD76ZLWEz8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <div class="flex-container download">
+    <div>
+      <iframe src="https://ghbtns.com/github-btn.html?user=ruigomeseu&repo=sebastians-adventure&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+    </div>
+    <div>
+      <a class="github-button" href="https://github.com/ruigomeseu/sebastians-adventure/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download ruigomeseu/sebastians-adventure on GitHub">Download</a>
+    </div>
+  </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <div class="flex-container menu">
+    <div class="menu-item">
+      <a href="{{site.baseurl}}{% post_url 2016-06-13-user-interface %}">
+        User Interface
+      </a>
+    </div>
+    <div class="menu-item">
+      <a href="{{site.baseurl}}{% post_url 2016-06-13-game-concept %}">
+        Game Concept
+      </a>
+    </div>
+    <div class="menu-item">
+      <a href="{{site.baseurl}}{% post_url 2016-06-13-technology %}">
+        Technology
+      </a>
+    </div>
+    <div class="menu-item">
+      <a href="{{site.baseurl}}{% post_url 2016-06-13-team %}">
+        Team
+      </a>
+    </div>
+  </div>
 </div>
