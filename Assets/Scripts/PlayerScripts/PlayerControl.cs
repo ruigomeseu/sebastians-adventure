@@ -59,8 +59,11 @@ public class PlayerControl : MonoBehaviour
 
 	public bool IsMovementActivated = true;
 
+	private WalkingSoundsController _walkingSoundsController;
+
 	void Awake()
 	{
+		_walkingSoundsController = GetComponent<WalkingSoundsController> ();
 		anim = GetComponent<Animator> ();
 		cameraTransform = Camera.main.transform;
 
@@ -188,7 +191,7 @@ public class PlayerControl : MonoBehaviour
 		else
 		{
 			GetComponent<Rigidbody> ().velocity = new Vector3(-0, GetComponent<Rigidbody> ().velocity.y, 0);
-			GetComponent<SoundsController> ().StopWalkingSound ();
+			_walkingSoundsController.StopWalkingSound ();
 			speed = 0f;
 			anim.SetFloat(speedFloat, 0f);
 

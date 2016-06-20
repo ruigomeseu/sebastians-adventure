@@ -67,7 +67,7 @@ public class EnemyMovement : MonoBehaviour
 			nav.SetDestination(nav.transform.position);
 		}
 
-		if (dead != 0 && dead + 2f < Time.time) {
+		if (dead != 0 && dead + 6.2f < Time.time) {
 			gameObject.SetActive (false);
 		}
 
