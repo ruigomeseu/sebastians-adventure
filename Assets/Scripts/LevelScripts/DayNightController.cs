@@ -21,7 +21,7 @@ public class DayNightController : MonoBehaviour {
 	public float timeMultiplier = 1f;
 
 	// Get the initial intensity of the sun so we remember it.
-	float sunInitialIntensity;
+	public float sunInitialIntensity;
 	void Start() {
 		//sun = GameObject.Find("Sun").GetComponent<Light>();
 		sunInitialIntensity = sun.intensity;
