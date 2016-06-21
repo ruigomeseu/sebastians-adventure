@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class EnemySpawner : MonoBehaviour {
 
@@ -7,7 +8,7 @@ public class EnemySpawner : MonoBehaviour {
 	private ArrayList enemies;
 
 	public int maxEnemies = 50;
-	public GameObject prefab;
+	public List<GameObject> prefabs;
 
 	//scripts 
 	public double currentTimeOfTheDay;
@@ -28,9 +29,10 @@ public class EnemySpawner : MonoBehaviour {
 			if ((Time.time - lastSpawnTime) > minimumSpawnTime) {
 				Debug.Log ("Time to spawn");
 				if (Random.Range (0, 100) > currentTimeOfTheDay*100) {
-						lastSpawnTime = Time.time;
-						Instantiate(prefab,generateValidSpawnPosition(), Quaternion.identity);
-						enemies.Add (prefab);
+					lastSpawnTime = Time.time;
+                    GameObject prefab = prefabs[Random.Range(0, prefabs.Count)];    
+					Instantiate(prefab,generateValidSpawnPosition(), Quaternion.identity);
+					enemies.Add (prefab);
 				}
 			}
 		}

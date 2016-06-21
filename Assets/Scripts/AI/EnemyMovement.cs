@@ -37,39 +37,49 @@ public class EnemyMovement : MonoBehaviour
 
 		float currentDistance = Vector3.Distance (nav.transform.position, player.transform.position);
 
-		if (currentDistance < minimum_distance) {
-			if (currentDistance <= 140 / 100) {
-				// se estiver perto suficiente do jogador
-				animator.SetBool(movingBool, false);
-				animator.SetBool (attackingBool, true);
-				nav.SetDestination (nav.transform.position);
-				lastStopAnimation = Time.time;
+        if(!animator.GetBool(deadBool))
+        {
+            if (currentDistance < minimum_distance)
+            {
+                if (currentDistance <= 140 / 100)
+                {
+                    // se estiver perto suficiente do jogador
+                    animator.SetBool(movingBool, false);
+                    animator.SetBool(attackingBool, true);
+                    nav.SetDestination(nav.transform.position);
+                    lastStopAnimation = Time.time;
 
-			} else if(currentDistance > (140/100)) {
-				//está a distância de correr atrás do jogador
-				animator.SetBool (movingBool, false);
-				nav.SetDestination (nav.transform.position);
+                }
+                else if (currentDistance > (140 / 100))
+                {
+                    //está a distância de correr atrás do jogador
+                    animator.SetBool(movingBool, false);
+                    nav.SetDestination(nav.transform.position);
 
-				if ((lastAttack + 2.1f) < Time.time) {
-					//já atacou e tem de voltar a seguir o jogador
-					animator.SetBool(attackingBool, false);
-					animator.SetBool (movingBool, true);
-					nav.SetDestination (player.position);
+                    if ((lastAttack + 2.1f) < Time.time)
+                    {
+                        //já atacou e tem de voltar a seguir o jogador
+                        animator.SetBool(attackingBool, false);
+                        animator.SetBool(movingBool, true);
+                        nav.SetDestination(player.position);
 
-				} else {
-					//tem de parar porque a animação de correr ainda está a ser executada
-					animator.SetBool(movingBool,false);
-					nav.SetDestination (nav.transform.position);
-				}
-			}
-		} else {
-			// nao está a distancia minima do jogador
-			nav.SetDestination(nav.transform.position);
-		}
+                    }
+                    else
+                    {
+                        //tem de parar porque a animação de correr ainda está a ser executada
+                        animator.SetBool(movingBool, false);
+                        nav.SetDestination(nav.transform.position);
+                    }
+                }
+            }
+            else
+            {
+                // nao está a distancia minima do jogador
+                nav.SetDestination(nav.transform.position);
+            }
+        }
 
-		if (dead != 0 && dead + 6.2f < Time.time) {
-			gameObject.SetActive (false);
-		}
+		
 
 	}
 
@@ -78,9 +88,12 @@ public class EnemyMovement : MonoBehaviour
 		if(col.gameObject.tag == "ThrowingRock")
 		{
 			animator.SetBool (deadBool, true);
-			Debug.Log ("entrou na colisao da pedra");
-			dead = Time.time;
 		}
 	}
+
+    void Die()
+    {
+        gameObject.SetActive(false);
+    }
 
 }

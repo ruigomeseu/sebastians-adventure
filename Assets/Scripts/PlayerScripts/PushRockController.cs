@@ -17,7 +17,6 @@ public class PushRockController : MonoBehaviour {
 	public float pushPower = 2.0F;
 
 	void OnCollisionEnter(Collision hit) {
-		Debug.Log ("HERE");
 		if (hit.gameObject == null || hit.gameObject.tag != "Player")
 			return;
 
@@ -25,7 +24,6 @@ public class PushRockController : MonoBehaviour {
 			GetComponent<Rigidbody> ().isKinematic = true;
 			return;
 		}
-		Debug.Log ("Aqui");
 		GetComponent<Rigidbody> ().isKinematic = false;
 
 		Rigidbody body = hit.gameObject.GetComponent<Rigidbody>();
