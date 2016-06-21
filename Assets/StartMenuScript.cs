@@ -11,6 +11,7 @@ public class StartMenuScript : MonoBehaviour {
 	void Start () {	
 		canvas = this.GetComponent<Canvas> ();
 		player = GameObject.FindGameObjectWithTag ("Player");
+		player.GetComponent<PlayerControl>().enabled = false;
 		player.GetComponent<PlayerSanity>().enabled = false;
 		player.GetComponent<Stamina>().enabled = false;
 		this.canvas.enabled = true;
@@ -22,6 +23,7 @@ public class StartMenuScript : MonoBehaviour {
 		Time.timeScale = 1;
 		this.canvas.enabled = false;
 		Screen.lockCursor = true;
+		player.GetComponent<PlayerControl>().enabled = true;
 		player.GetComponent<PlayerSanity>().enabled = true;
 		player.GetComponent<Stamina>().enabled = true;
 	}
