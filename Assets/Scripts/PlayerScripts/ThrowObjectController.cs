@@ -21,7 +21,9 @@ public class ThrowObjectController : MonoBehaviour {
 	
 	}
 	public void ThrowRock(){
-		GetComponent<Animator>().SetBool (Animator.StringToHash ("Throwing"), true);
+		if (GetComponent<Animator> ().GetBool (Animator.StringToHash ("Throwing")) == false) {
+			GetComponent<Animator> ().SetBool (Animator.StringToHash ("Throwing"), true);
+		}
 	}
 
 
