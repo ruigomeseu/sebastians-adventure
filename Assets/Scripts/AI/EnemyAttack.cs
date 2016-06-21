@@ -5,7 +5,7 @@ public class EnemyAttack : MonoBehaviour {
 
 	GameObject playerChar;
 	NavMeshAgent nav;
-	public int damage=10;
+	public int damage=750;
 	public double minimum_attack_distance= 5f;
 	public float lastAttack;
 	public float timeBetweenAttacks;

@@ -39,14 +39,12 @@ public class PushRockController : MonoBehaviour {
 
 
 	void OnCollisionStay(Collision hit) {
-		Debug.Log ("HERE");
 		if (hit.gameObject == null || hit.gameObject.tag != "Player")
 			return;
 		if (hit.gameObject.GetComponent<PlayerControl> ().isSprinting ()) {
 			GetComponent<Rigidbody> ().isKinematic = true;
 			return;
 		}
-		Debug.Log ("Aqui");
 		GetComponent<Rigidbody> ().isKinematic = false;
 
 		Rigidbody body = hit.gameObject.GetComponent<Rigidbody>();
