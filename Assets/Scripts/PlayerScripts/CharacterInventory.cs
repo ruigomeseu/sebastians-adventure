@@ -25,6 +25,14 @@ public class CharacterInventory : MonoBehaviour {
 	private AudioSource audioSource;
 	private AudioClip pickedItemSound;
 
+	private bool binocularPicked=true;
+	private bool mapPicked;
+	private bool binocularUse=false;
+
+
+	private GameObject normalCamera;
+	private GameObject zoomCamera;
+
 	/**
 	 * Picked objects variables
 	 */
@@ -42,6 +50,15 @@ public class CharacterInventory : MonoBehaviour {
 
 		audioSource = gameObject.AddComponent<AudioSource>();
 		pickedItemSound = (AudioClip) Resources.Load("Sounds/pickItem_teste");
+
+		normalCamera = GameObject.Find ("Main Camera");
+		zoomCamera = GameObject.Find ("Zoom Camera");
+
+		normalCamera.SetActive (true);
+		zoomCamera.SetActive (false);
+
+
+
 	}
 
 
@@ -150,24 +167,42 @@ public class CharacterInventory : MonoBehaviour {
 			}catch(System.Exception e) {
 				picked = false;
 			}
+				
+		}
 
+		if (Input.GetKeyDown (KeyCode.Alpha2)) {
+			switchCameras ();
+		}
+		if (Input.GetKeyUp (KeyCode.Alpha2)) {
+			switchCameras ();
 		}
 	}
 
 
 	void OnGUI(){
-		if (opened) {
-			GUI.DrawTexture (inventoryRect, inventoryTexture);
 
-			int i;
-			for (i = 0; i < inventoryTextureArray.Count; i++) {
-				GUI.DrawTexture ((Rect)inventory[i], (Texture2D) inventoryTextureArray[i]);
+		if (!binocularUse) {
+
+			if (opened) {
+				GUI.DrawTexture (inventoryRect, inventoryTexture);
+
+				int i;
+				for (i = 0; i < inventoryTextureArray.Count; i++) {
+					GUI.DrawTexture ((Rect)inventory[i], (Texture2D) inventoryTextureArray[i]);
+				}
+			}
+
+			if (picked) {
+				GUI.DrawTexture (pickedObjectRect, pickedObjectTexture,ScaleMode.ScaleToFit);
 			}
 		}
 
-		if (picked) {
-			GUI.DrawTexture (pickedObjectRect, pickedObjectTexture,ScaleMode.ScaleToFit);
-		}
+	}
 
+
+	void switchCameras() {
+		normalCamera.SetActive (!normalCamera.activeSelf);
+		zoomCamera.SetActive (!zoomCamera.activeSelf);
+		binocularUse = !binocularUse;
 	}
 }
