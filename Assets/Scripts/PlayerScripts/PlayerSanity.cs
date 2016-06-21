@@ -6,13 +6,13 @@ public class PlayerSanity : MonoBehaviour {
 
 	public bool enabled = true;
 
-	private double sanity;
+	public double sanity;
 	private double maxSanityLevel = 1000;
 	private double sanityCouncern=100;
 	private SanityBlur sanityBlurScript;
 	private double lastAttackReceived=0f;
 	private double minTimeBetweenRecoveries=5f;
-	private double recoveryRate=50;
+	private double recoveryRate=75f;
 
 	Rect sanityRect;
 	Texture2D sanityTexture;
@@ -20,10 +20,6 @@ public class PlayerSanity : MonoBehaviour {
 	void Start () {
 		sanity = maxSanityLevel;
 		sanityBlurScript = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<SanityBlur> ();
-		sanityRect = new Rect((Screen.width / 20), (Screen.height / 10) * 9f, Screen.width / 3, Screen.height / 50);
-		sanityTexture = new Texture2D(1, 1);
-		sanityTexture.SetPixel(0, 0, new Color(254 / 256f, 208 / 62, 120 / 72f, 1f));
-		sanityTexture.Apply();
 	}
 
 
@@ -37,6 +33,7 @@ public class PlayerSanity : MonoBehaviour {
 
 		if (Time.time > (minTimeBetweenRecoveries + lastAttackReceived)) {
 			lastAttackReceived = Time.time;
+			Debug.Log ("Sanity: " + sanity);
 			sanity = System.Math.Min (sanity+recoveryRate, maxSanityLevel);
             sanity = System.Math.Max(0, sanity);
         }
@@ -52,13 +49,4 @@ public class PlayerSanity : MonoBehaviour {
 		lastAttackReceived = Time.time;
 	}
 
-	void OnGUI()
-	{
-		if (enabled) {
-			double ratio = sanity / maxSanityLevel;
-			double rectWidth = ratio * Screen.width / 3;
-			sanityRect.width = (float)rectWidth;
-			GUI.DrawTexture (sanityRect, sanityTexture);
-		}
-	}
 }

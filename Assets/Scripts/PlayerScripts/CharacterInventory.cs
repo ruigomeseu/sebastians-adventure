@@ -12,33 +12,38 @@ public class CharacterInventory : MonoBehaviour {
 
 	public ArrayList inventoryObjectsPickable;
 
-
-
-	public bool opened = false;
-
-	float inventoryX = (Screen.width / 20);
-	float inventoryY = (Screen.height / 12)*9.5f;
-
-	float inventoryWidth = Screen.width / 2;
-	float inventoryHeight = Screen.height / 10;
+	public bool opened = true;
 
 	private AudioSource audioSource;
 	private AudioClip pickedItemSound;
-
-	private bool binocularPicked=true;
-	private bool mapPicked;
-	private bool binocularUse=false;
 
 
 	private GameObject normalCamera;
 	private GameObject zoomCamera;
 
-	/**
-	 * Picked objects variables
-	 */
-	public bool picked = false;
-	Texture2D pickedObjectTexture;
-	Rect pickedObjectRect;
+
+	// images from the inventory and interface
+
+	public Texture hpText;
+	public Texture hpBar;
+	public Texture staminaText;
+	public Texture staminaBar;
+	public Texture binocularImage;
+	public Texture binocularNonPickedImage;
+	public Texture rockImage;
+	public Texture mapImage;
+	public Texture mapNonPickedImage;
+	public Texture mapImageShow;
+
+
+	private bool pickedBinoc=false;
+	private bool pickedMap=false;
+
+	private bool showMap=false;
+
+	//Scripts
+	private PlayerSanity playerSanityScript;
+	private Stamina playerStaminaScript;
 
 	// Use this for initialization
 	void Start () {
@@ -57,152 +62,120 @@ public class CharacterInventory : MonoBehaviour {
 		normalCamera.SetActive (true);
 		zoomCamera.SetActive (false);
 
-
-
-	}
-
-
-	void showInventoryOnPanel()
-	{
-		int col = 0;
-		int i = 0;
-		for( ; i < inventoryObjects.Count; i++)
-		{
-			float offset = 2;
-			Rect boxInv = new Rect (inventoryX + ((inventoryWidth/9)+offset)*col + offset,
-				inventoryY,
-				inventoryWidth/9,
-				inventoryHeight);
-			Texture2D boxInvTexture = (Texture2D)inventoryObjects [i];
-			inventory.Add (boxInv);
-			inventoryTextureArray.Add (boxInvTexture);
-
-			col++;
-		}
-	}
-
-	void createInventoryPanel()
-	{
-
-		inventoryRect = new Rect (inventoryX, inventoryY, inventoryWidth, inventoryHeight);
-		inventoryTexture = new Texture2D (1, 1);
-		inventoryTexture.SetPixel (0, 0, new Color (236 / 255f, 208 / 255f, 120 / 255f, 0.4f));
-		inventoryTexture.Apply ();
-
-
-		showInventoryOnPanel ();
+		playerSanityScript = GetComponent<PlayerSanity> ();
+		playerStaminaScript = GetComponent<Stamina> ();
 	}
 
 	// Update is called once per frame
 	void Update () {
-
-		//open inventory
-		if (Input.GetKeyUp (KeyCode.I)) {
-			if (opened) {
-				opened = false;
-				picked = false;
-			} else {
-				opened = true;
-				picked = false;
-				createInventoryPanel ();
-			}
-		}
-
-
 		//pick object
 		if(Input.GetKeyUp (KeyCode.E)) {
 
-			if (picked) {
-				picked = false;
-				return;
-			}
 
-			GameObject[] objectsInWorld = GameObject.FindGameObjectsWithTag ("InventoryObject");
-
-			foreach( GameObject go in objectsInWorld)
-			{
-				float distance =Vector3.Distance(transform.position,go.transform.position);
-
-
-				if (distance < 2) {
-
+			GameObject map = GameObject.FindGameObjectWithTag ("Map");
+			if (map != null) {
+			 
+				float distanceToMap = Vector3.Distance (transform.position, map.transform.position);
+				if(distanceToMap < 2) {
 					GetComponent<PlayerControl>().anim.SetBool (GetComponent<PlayerControl>().pickingBool, true);
-
-					//play sound
 					audioSource.clip = pickedItemSound;
 					audioSource.Play ();
+					pickedMap = true;
+					map.SetActive(false);
+				}
+			}
 
-					//pick object
-					PickableObjectBehaviour temp = go.GetComponent<PickableObjectBehaviour>();
-					inventoryObjectsPickable.Add (temp);
-					inventoryObjects.Add (temp.objTexture);
-					inventoryObjectsNames.Add (go.name);
+			GameObject binoc = GameObject.FindGameObjectWithTag ("Binoc");
+			if(binoc != null) {
 
-					picked = false; // sets object to appear
-
-					Destroy (go);
+				float distanceToBinoc = Vector3.Distance (transform.position, binoc.transform.position);
+				if (distanceToBinoc < 2) {
+					GetComponent<PlayerControl>().anim.SetBool (GetComponent<PlayerControl>().pickingBool, true);
+					audioSource.clip = pickedItemSound;
+					audioSource.Play ();
+					pickedBinoc = true;
+					binoc.SetActive(false);
 				}
 			}
 		}
 
 
 		//select object from inventory
-		if (Input.GetKeyUp (KeyCode.Alpha1)) {
-			if (opened == false)
-				return;
-			if (picked) {
-				picked = false;
-				opened = false;
-				return;
-			}
-			if(picked == true & opened == false) {
-				opened = true;
-			}
-
-			try{
-				picked = true;
-				PickableObjectBehaviour temp = ((PickableObjectBehaviour)inventoryObjectsPickable [0]);
-				pickedObjectTexture = temp.objTexture; //sets texture to appear
-				pickedObjectRect = new Rect(temp.pickedObjX,temp.pickedObjY,temp.pickedObjWidth,temp.PickedObjHeight);
-			}catch(System.Exception e) {
-				picked = false;
-			}
-				
+		if (Input.GetKeyDown (KeyCode.Alpha2) && pickedMap) {
+			showMap = true;
+		} else if (Input.GetKeyUp (KeyCode.Alpha2) && pickedMap) {
+			showMap = false;
 		}
 
-		if (Input.GetKeyDown (KeyCode.Alpha2)) {
+		if (Input.GetKeyDown (KeyCode.Alpha1) && pickedBinoc) {
 			switchCameras ();
 		}
-		if (Input.GetKeyUp (KeyCode.Alpha2)) {
+		else if (Input.GetKeyUp (KeyCode.Alpha1) && pickedBinoc) {
 			switchCameras ();
 		}
 	}
 
 
 	void OnGUI(){
+		drawInventory ();
+		drawInterfaceBars ();
 
-		if (!binocularUse) {
-
-			if (opened) {
-				GUI.DrawTexture (inventoryRect, inventoryTexture);
-
-				int i;
-				for (i = 0; i < inventoryTextureArray.Count; i++) {
-					GUI.DrawTexture ((Rect)inventory[i], (Texture2D) inventoryTextureArray[i]);
-				}
-			}
-
-			if (picked) {
-				GUI.DrawTexture (pickedObjectRect, pickedObjectTexture,ScaleMode.ScaleToFit);
-			}
+		if (showMap) {
+			drawMap ();
 		}
 
+		drawInterfaceBars ();
 	}
 
 
 	void switchCameras() {
 		normalCamera.SetActive (!normalCamera.activeSelf);
 		zoomCamera.SetActive (!zoomCamera.activeSelf);
-		binocularUse = !binocularUse;
+	}
+
+	void drawInterfaceBars() {
+		//draw the HP bar
+		GUI.DrawTexture (new Rect(20, Screen.height - 50, (float)25*4.54f, 25f), hpText, ScaleMode.ScaleToFit);
+		//draw the Stamina bar
+		GUI.DrawTexture (new Rect(20, Screen.height - 90, (float)25*4.54f, 25f), staminaText, ScaleMode.ScaleToFit);
+
+		//draw the hp bars
+		float numHpBars = Mathf.Round((float)(playerSanityScript.sanity*50f)/1000f);
+
+		for (int i = 0; i < numHpBars; i++) {
+			GUI.DrawTexture (new Rect(28*4.54f + i*8 , Screen.height - 50, 12.39f, 12.39f*2.017f), hpBar, ScaleMode.ScaleToFit);
+		}
+
+
+		//draw the stamina bars
+		float numStaminaBars = Mathf.Round((float)(playerStaminaScript.getCurrentStamina()*50f)/10f);
+
+		for (int j = 0; j < numStaminaBars; j++) {
+			GUI.DrawTexture (new Rect(28*4.54f + j*8 , Screen.height - 90, 12.39f, 12.39f*2.017f), staminaBar, ScaleMode.ScaleToFit);
+		}
+
+	}
+
+	void drawMap() {
+		GUI.DrawTexture (new Rect ((Screen.width - mapImageShow.width)/2,((Screen.height - mapImageShow.height)/2),mapImageShow.width,mapImageShow.height), mapImageShow,ScaleMode.ScaleToFit);
+	}
+
+
+	void drawInventory() {
+		if (!pickedBinoc) {
+			GUI.DrawTexture (new Rect (20, 10, 70,101), binocularNonPickedImage);
+
+		} else {
+			GUI.DrawTexture (new Rect (20, 10, 70,101), binocularImage);
+
+		}
+		if (!pickedMap) {
+			GUI.DrawTexture (new Rect (100, 10, 70,101), mapNonPickedImage);
+
+		} else {
+			GUI.DrawTexture (new Rect (100, 10, 70,101), mapImage);
+		}
+
+		GUI.DrawTexture (new Rect (180, 10, 70,101), rockImage);
 	}
 }

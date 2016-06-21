@@ -175,7 +175,7 @@ public class PlayerControl : MonoBehaviour
 			if(sprinting && staminaScript.getCurrentStamina() > 0)
 			{
 				speed = sprintSpeed;
-				staminaRate = speed / 200f;
+				staminaRate = speed / 300f;
             }
 			else
 			{
@@ -195,7 +195,7 @@ public class PlayerControl : MonoBehaviour
 			speed = 0f;
 			anim.SetFloat(speedFloat, 0f);
 
-			staminaRate = -0.005f;
+			staminaRate = -0.01f;
 		}
 
 		staminaScript.changeStamina(staminaRate);
