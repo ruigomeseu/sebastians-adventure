@@ -20,9 +20,5 @@ public class EnemyLightController : MonoBehaviour {
 		} else {
 			GetComponent<Light> ().intensity = 0;
 		}
-
-
-
-
 	}
 }

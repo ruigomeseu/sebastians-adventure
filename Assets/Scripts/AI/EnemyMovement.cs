@@ -94,6 +94,8 @@ public class EnemyMovement : MonoBehaviour
     void Die()
     {
         gameObject.SetActive(false);
+
+		GetComponent<AlienSoundsController> ().DieSound ();
     }
 
 }
