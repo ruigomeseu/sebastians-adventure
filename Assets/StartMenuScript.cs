@@ -14,6 +14,7 @@ public class StartMenuScript : MonoBehaviour {
 		player.GetComponent<PlayerControl>().enabled = false;
 		player.GetComponent<PlayerSanity>().enabled = false;
 		player.GetComponent<Stamina>().enabled = false;
+		player.GetComponent<MainStoryScript> ().enabled = false;
 		this.canvas.enabled = true;
 		Time.timeScale = 0;
 		Screen.lockCursor = false;
@@ -26,6 +27,7 @@ public class StartMenuScript : MonoBehaviour {
 		player.GetComponent<PlayerControl>().enabled = true;
 		player.GetComponent<PlayerSanity>().enabled = true;
 		player.GetComponent<Stamina>().enabled = true;
+		player.GetComponent<MainStoryScript> ().enabled = true;
 	}
 
 	public void QuitGame() {
