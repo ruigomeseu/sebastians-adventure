@@ -116,6 +116,7 @@ html {
 
 .post-page a {
   color: #FFFFFF;
+  text-decoration: underline;
 }
 
 .post-page h1,
