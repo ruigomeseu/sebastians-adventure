@@ -124,6 +124,8 @@ html {
 .post-page h3,
 .post-page h4{
   color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: 'avalonbold',sans-serif;
 }
 
 .main-content h1 {
@@ -143,6 +145,7 @@ html {
 
 .site-footer-credits {
   color: #2C3539;
+  font-weight: bold;
 }
 
 .site-footer-credits a {
