@@ -8,7 +8,8 @@ public class MainStoryScript : MonoBehaviour {
 		{"find_house" , "Encontra a casa para obteres orientações do habitante"},
 		{"talk_npc" , "Fala com o habitante local"},
 		{"find_map" , "Encontra o mapa"},
-		{"find_pilot", "Encontra o piloto para terminar o jogo"}
+		{"find_pilot", "Encontra o piloto para terminar o jogo"},
+		{"game_ended", "Terminou o jogo!"}
 	};
 	public string CurrentStoryState;
 
@@ -22,6 +23,7 @@ public class MainStoryScript : MonoBehaviour {
 	private float ShowTime = 0f;
 
 	private GameObject npcPlayer;
+	private GameObject pilotPlayer;
 
 
 	// Use this for initialization
@@ -35,6 +37,7 @@ public class MainStoryScript : MonoBehaviour {
 		objectiveTexture.Apply();
 
 		npcPlayer = GameObject.FindGameObjectWithTag ("NPCPlayer");
+		pilotPlayer = GameObject.FindGameObjectWithTag ("Pilot");
 	}
 
 	public void SetStoryState(string state)
@@ -68,6 +71,23 @@ public class MainStoryScript : MonoBehaviour {
 
 		this.GetComponent<DialogScript> ().StartDialog (audioList);
 	}
+	void TalkPilot(){
+		/*
+		this.GetComponent<PlayerControl> ().IsMovementActivated = false;	
+
+		audioClip = (AudioClip) Resources.Load("Sounds/pickItem_teste");
+		audioSource.clip = audioClip;
+		audioSource.Play ();
+		this.GetComponent<PlayerControl> ().IsMovementActivated = true;
+		Invoke ("ShowObjective", audioClip.length);*/
+
+		List<AudioClip> audioList = new List<AudioClip> ();
+
+		audioList.Add((AudioClip) Resources.Load("Sounds/Dialogs/Player/dialoguePlayer_4"));
+		audioList.Add((AudioClip) Resources.Load("Sounds/Dialogs/Pilot/dialoguePilot_1"));
+
+		this.GetComponent<DialogScript> ().StartDialog (audioList);
+	}
 
 	void Update () {
 		switch(CurrentStoryState){
@@ -93,10 +113,16 @@ public class MainStoryScript : MonoBehaviour {
 					this.SetStoryState ("find_pilot");
 					this.ShowObjective ();
 				}	
-				break;	
+			break;	
 			case "find_pilot":
-				
+				if (Vector3.Distance (this.transform.position, pilotPlayer.transform.position) < 8) {
+					TalkPilot ();
+					this.SetStoryState ("game_ended");
+				}				
 				break;	
+			case "game_ended":
+				this.ShowObjective ();
+				break;
 		}
 
 	}
