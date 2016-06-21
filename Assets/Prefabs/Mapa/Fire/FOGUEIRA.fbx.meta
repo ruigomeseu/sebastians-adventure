@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: 1bd7619651e614957895e9629270fe74
+timeCreated: 1466523828
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Bone
+    100004: Bone.001
+    100006: Bone.001_end
+    100008: Camera
+    100010: FOGO1
+    100012: FOGO2
+    100014: FOGO3
+    100016: FOGO4
+    100018: //RootNode
+    100020: Lamp
+    100022: Sun
+    100024: TRONCO
+    100026: TRONCO1
+    100028: TRONCO2
+    100030: TRONCO3
+    100032: TRONCO4
+    100034: TRONCO5
+    400000: Armature
+    400002: Bone
+    400004: Bone.001
+    400006: Bone.001_end
+    400008: Camera
+    400010: FOGO1
+    400012: FOGO2
+    400014: FOGO3
+    400016: FOGO4
+    400018: //RootNode
+    400020: Lamp
+    400022: Sun
+    400024: TRONCO
+    400026: TRONCO1
+    400028: TRONCO2
+    400030: TRONCO3
+    400032: TRONCO4
+    400034: TRONCO5
+    2300000: FOGO1
+    2300002: FOGO3
+    2300004: FOGO4
+    2300006: TRONCO
+    2300008: TRONCO1
+    2300010: TRONCO2
+    2300012: TRONCO3
+    2300014: TRONCO4
+    2300016: TRONCO5
+    3300000: FOGO1
+    3300002: FOGO3
+    3300004: FOGO4
+    3300006: TRONCO
+    3300008: TRONCO1
+    3300010: TRONCO2
+    3300012: TRONCO3
+    3300014: TRONCO4
+    3300016: TRONCO5
+    4300000: FOGO2
+    4300002: FOGO4
+    4300004: FOGO3
+    4300006: FOGO1
+    4300008: TRONCO5
+    4300010: TRONCO4
+    4300012: TRONCO3
+    4300014: TRONCO2
+    4300016: TRONCO1
+    4300018: TRONCO
+    7400000: Armature|ArmatureAction
+    9500000: //RootNode
+    13700000: FOGO2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|ArmatureAction
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 160
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Bone.001
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.001_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: FOGO1
+        weight: 1
+      - path: FOGO2
+        weight: 1
+      - path: FOGO3
+        weight: 1
+      - path: FOGO4
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Sun
+        weight: 1
+      - path: TRONCO
+        weight: 1
+      - path: TRONCO1
+        weight: 1
+      - path: TRONCO2
+        weight: 1
+      - path: TRONCO3
+        weight: 1
+      - path: TRONCO4
+        weight: 1
+      - path: TRONCO5
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
