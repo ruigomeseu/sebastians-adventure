@@ -39,12 +39,10 @@ public class EnemySpawner : MonoBehaviour {
 	}
 
 	Vector3 generateValidSpawnPosition() {
-		double x = Random.Range (0, 140);
-		x -= 70f;
-		double y = Random.Range (7, 14);
-		double z = Random.Range (0, 140);
-		z -= 70f;
-
+		double x = Random.Range (60, 68);
+		double y = 20;
+		double z = Random.Range (10, 0);
+		z -= 25;
 		// the multiplication by 2 is to see the effect of the alliens falling of the sky
 		return new Vector3 ((float)x, (float)y, (float)z);
 	}
