@@ -7,7 +7,7 @@ public class DialogScript : MonoBehaviour {
 	public List<AudioClip> dialogAudioList;
 	public AudioClip currentAudioClip;
 	public int currentAudioInt;
-	private AudioSource audioSource;
+	public AudioSource audioSource;
 
 	// Use this for initialization
 	void Start () {
@@ -23,7 +23,8 @@ public class DialogScript : MonoBehaviour {
 	public void NextDialog(){
 		currentAudioInt++;
 		if (currentAudioInt >= dialogAudioList.Count) {
-			this.GetComponent<PlayerControl> ().IsMovementActivated = true;
+            this.GetComponent<MainStoryScript>().ShowObjective();
+            this.GetComponent<PlayerControl> ().IsMovementActivated = true;
 			return;
 		}
 

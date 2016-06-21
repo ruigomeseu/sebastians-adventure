@@ -36,8 +36,8 @@ public class CharacterInventory : MonoBehaviour {
 	public Texture mapImageShow;
 
 
-	private bool pickedBinoc=false;
-	private bool pickedMap=false;
+	public bool pickedBinoc=false;
+	public bool pickedMap=false;
 
 	private bool showMap=false;
 

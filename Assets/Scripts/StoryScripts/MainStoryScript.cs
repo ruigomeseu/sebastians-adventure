@@ -44,7 +44,7 @@ public class MainStoryScript : MonoBehaviour {
 		}
 	}
 
-	void ShowObjective(){
+	public void ShowObjective(){
 		this.ObjectiveShown = false;
 	}
 
@@ -79,15 +79,17 @@ public class MainStoryScript : MonoBehaviour {
 				break;
 			case "talk_npc":
 				if (Vector3.Distance (this.transform.position, npcPlayer.transform.position) < 2) {
-					if (!audioSource.isPlaying) {
+                    Debug.Log("TALK NPC OBJECTIVE");
+					if (!GetComponent<DialogScript>().audioSource.isPlaying) {
 						TalkNPC ();
 						this.SetStoryState ("find_map");
-					}
+                    }
 
 				}
 				break;
 			case "find_map":
-				if (GetComponent<CharacterInventory> ().inventoryObjectsNames.Contains ("Map")) {
+                Debug.Log("A");
+                if (GetComponent<CharacterInventory> ().pickedMap) {
 					this.SetStoryState ("find_pilot");
 					this.ShowObjective ();
 				}	
