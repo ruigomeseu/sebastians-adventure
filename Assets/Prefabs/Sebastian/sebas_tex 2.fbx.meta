@@ -1,0 +1,242 @@
+fileFormatVersion: 2
+guid: 07376c2d8a97442fd8f6c174dbc7ff15
+timeCreated: 1466444015
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Camera.001
+    100004: chest
+    100006: Cube
+    100008: fing.L
+    100010: fing.L.001
+    100012: fing.L.001_end
+    100014: fing.L.001_end_end
+    100016: fing.R
+    100018: fing.R.001
+    100020: fing.R.001_end
+    100022: fing.R.001_end_end
+    100024: foor roll.L
+    100026: foor roll.R
+    100028: foot.L
+    100030: foot.R
+    100032: hand.L
+    100034: hand.R
+    100036: head
+    100038: head_end
+    100040: head_end_end
+    100042: Lamp
+    100044: Lamp.001
+    100046: Lamp.002
+    100048: Lamp.003
+    100050: Lamp.004
+    100052: larm.L
+    100054: larm.L.001
+    100056: larm.L.002
+    100058: larm.L.002_end
+    100060: larm.L.002_end_end
+    100062: larm.R
+    100064: larm.R.001
+    100066: larm.R.002
+    100068: larm.R.002_end
+    100070: larm.R.002_end_end
+    100072: leg control.L
+    100074: leg control.R
+    100076: leg ik.L
+    100078: leg ik.L_end
+    100080: leg ik.L_end_end
+    100082: leg ik.R
+    100084: leg ik.R_end
+    100086: leg ik.R_end_end
+    100088: leg pole target.L
+    100090: leg pole target.L_end
+    100092: leg pole target.L_end_end
+    100094: leg pole target.R
+    100096: leg pole target.R_end
+    100098: leg pole target.R_end_end
+    100100: lowerleg.L
+    100102: lowerleg.L_end
+    100104: lowerleg.L_end_end
+    100106: lowerleg.R
+    100108: lowerleg.R_end
+    100110: lowerleg.R_end_end
+    100112: neck
+    100114: root
+    100116: s1
+    100118: //RootNode
+    100120: Sebastian
+    100122: Sun
+    100124: Sun.001
+    100126: Sun.002
+    100128: Sun.003
+    100130: toes control.L
+    100132: toes control.L_end
+    100134: toes control.L_end_end
+    100136: toes control.R
+    100138: toes control.R_end
+    100140: toes control.R_end_end
+    100142: toes.L
+    100144: toes.L_end
+    100146: toes.L_end_end
+    100148: toes.R
+    100150: toes.R_end
+    100152: toes.R_end_end
+    100154: torso
+    100156: uparm.L
+    100158: uparm.R
+    100160: upper leg.L
+    100162: upper leg.R
+    400000: Camera
+    400002: Camera.001
+    400004: chest
+    400006: Cube
+    400008: fing.L
+    400010: fing.L.001
+    400012: fing.L.001_end
+    400014: fing.L.001_end_end
+    400016: fing.R
+    400018: fing.R.001
+    400020: fing.R.001_end
+    400022: fing.R.001_end_end
+    400024: foor roll.L
+    400026: foor roll.R
+    400028: foot.L
+    400030: foot.R
+    400032: hand.L
+    400034: hand.R
+    400036: head
+    400038: head_end
+    400040: head_end_end
+    400042: Lamp
+    400044: Lamp.001
+    400046: Lamp.002
+    400048: Lamp.003
+    400050: Lamp.004
+    400052: larm.L
+    400054: larm.L.001
+    400056: larm.L.002
+    400058: larm.L.002_end
+    400060: larm.L.002_end_end
+    400062: larm.R
+    400064: larm.R.001
+    400066: larm.R.002
+    400068: larm.R.002_end
+    400070: larm.R.002_end_end
+    400072: leg control.L
+    400074: leg control.R
+    400076: leg ik.L
+    400078: leg ik.L_end
+    400080: leg ik.L_end_end
+    400082: leg ik.R
+    400084: leg ik.R_end
+    400086: leg ik.R_end_end
+    400088: leg pole target.L
+    400090: leg pole target.L_end
+    400092: leg pole target.L_end_end
+    400094: leg pole target.R
+    400096: leg pole target.R_end
+    400098: leg pole target.R_end_end
+    400100: lowerleg.L
+    400102: lowerleg.L_end
+    400104: lowerleg.L_end_end
+    400106: lowerleg.R
+    400108: lowerleg.R_end
+    400110: lowerleg.R_end_end
+    400112: neck
+    400114: root
+    400116: s1
+    400118: //RootNode
+    400120: Sebastian
+    400122: Sun
+    400124: Sun.001
+    400126: Sun.002
+    400128: Sun.003
+    400130: toes control.L
+    400132: toes control.L_end
+    400134: toes control.L_end_end
+    400136: toes control.R
+    400138: toes control.R_end
+    400140: toes control.R_end_end
+    400142: toes.L
+    400144: toes.L_end
+    400146: toes.L_end_end
+    400148: toes.R
+    400150: toes.R_end
+    400152: toes.R_end_end
+    400154: torso
+    400156: uparm.L
+    400158: uparm.R
+    400160: upper leg.L
+    400162: upper leg.R
+    2300000: Cube
+    3300000: Cube
+    4300000: Sebastian
+    4300002: Cube
+    7400000: s1|Armature|Armature|ArmatureAction.002|Armature|ArmatureAction.00
+    9500000: //RootNode
+    13700000: Sebastian
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Sebastian
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
