@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: a73c269fead68424f817c24f64cb2254
-timeCreated: 1464599448
+guid: 11853711d02d2450190a43735ceaf904
+timeCreated: 1466504819
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: casa4.003
+    4300000: casa1.006
   materials:
     importMaterials: 1
     materialName: 0
