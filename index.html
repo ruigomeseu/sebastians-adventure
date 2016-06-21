@@ -32,10 +32,10 @@ title: "Home"
   </div>
 
   <div class="flex-container menu">
-  {% for post in site.posts %}
-    <div class="menu-item">
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </div>
+    {% for post in site.posts %}
+      <div class="menu-item">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </div>
     {% endfor %}
   </div>
 
