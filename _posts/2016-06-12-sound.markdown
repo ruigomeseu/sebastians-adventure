@@ -5,8 +5,32 @@ date:   2016-06-12 12:00:00
 categories: main
 ---
 
-## Sebastian
+## Sound Design
 
-## Pilot
+With any gaming experience sound is an important element for the whole sense of immersion, not only during the game play but also while navigating trough the various options of the user interface. The main purpose is to never let the player break out of the universe created by the game.
 
-## Aliens
+Several dynamics can be used by the sound to devise anticipation, stress, sense of stealth, need to escape and so many other emotional an psychological components important to the “feel” of the game. For “Sebastian's Adventure” the sound design was planned to be contrived by five main sound categories - Music composition, Game Environment, Action events, Dialogues and User interface.
+
+## Music Composition
+
+The music composition was done for two musical themes - the main menu and the game play. Having no prior information about the place where in at the begging of the game the main menu music could already provide some tips - the weary sound of ethnical pluck instruments along with the synthetic pads let’s the player into an enigmatic state of far away fantasy.
+
+The game play music works along the same path as the main menu but with a more stressful rhythm of big percussion and the ocasional stings of synthetic strings whenever the player enters a dangerous zone.
+
+## Game Environment
+
+Since the game happens in a kind of naturalistic set the environmental sounds reflect the landscape and elements of the fauna presented in an island. Several sound elements of wind, water and creatures where placed along the map giving the player an aural experience of a natural set.
+
+## Action Events
+
+One of the most important aspects of the adventure is the action events when the player as to confront the aliens living in the island. Being strange aggressive creatures, the aliens “speech” is represented by mixed sounds of wild animals with a synthetic treatment. The bulk of the action sounds are contrived by natural sampled sounds transformed to achieved an higher degree of stress and aggressiveness, like sounds of punching meat bags mixed with human vocals or the sound of bashing a grape fruit mixed with a crow squeak.
+
+## Dialogues
+
+Dialogues are an important aspect of any adventure game, it helps the player to relate with the other characters and sometimes are essential to advance throughout the game by giving tips to solve puzzles or other challenges that might be necessary to accomplished before getting forward to other levels.
+
+The dialogues for “Sebastian's Adventure” where capture in a studio environment with several voices performed to match the characters in display - main playable character, a friendly alien and the Npc.
+
+## User Interface
+
+Since sometimes pressing the menu button is a way to rest from the game play environment, the user interface was design to have mildly synthetic one-shots sounds in order to counterbalance the stressful sounds of the game play.
