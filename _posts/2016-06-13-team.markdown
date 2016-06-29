@@ -9,10 +9,10 @@ Sebatian's Adventure is a game created for the [Computer Games Development](http
 
 ### Computer Engineering
 
-- José Melo - ei12050@fe.up.pt
-- Ricardo Loureiro - ei12034@fe.up.pt
-- Rui Gomes - ei12038@fe.up.pt
-- Tiago Ferreira - ei12051@fe.up.pt
+- José Melo
+- Ricardo Loureiro
+- Rui Gomes
+- Tiago Ferreira
 
 Responsible for the implementation of the mechanics in Unity, the development of this website and the composition of the game storyline.
 
