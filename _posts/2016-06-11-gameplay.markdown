@@ -9,9 +9,9 @@ categories: main
 
 The early prototype consists solely in one single level.
 
-Right after the moment that the player starts the game he encounters the main character, Sebastian, in an island.
+Right after the moment that the player starts the game he encounters the main character, Sebastian, on an island.
 
-The player rapidly realizes that he isn't alone in the island as aliens try to take his life.
+The player rapidly realizes that he isn't alone on the island as aliens try to take his life.
 
 In order to survive, Sebastian tries to reach for help among the local population of the island using a map that was near his wreckage.
 
