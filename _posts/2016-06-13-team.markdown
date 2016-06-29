@@ -5,7 +5,7 @@ date:   2016-06-13 12:00:00
 categories: main
 ---
 
-Sebatian's Adventure is a game created for the [Computer Games Development](https://sigarra.up.pt/feup/en/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=368731) class by a multidisciplinary team.
+Sebastian's Adventure is a game created for the [Computer Games Development](https://sigarra.up.pt/feup/en/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=368731) class by a multidisciplinary team.
 
 ### Computer Engineering
 
